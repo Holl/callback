@@ -1,3 +1,6 @@
-This will be a Django app which helps actor’s find auditions.
+This is a Django App, using TastyPie, to help Actors find Auditions.
 
-At the moment, it is being worked on.  Please let me know if you have any advice.
+Currently the logic exists to create two different kinds of profiles: Actor and Production.
+Auditions and Tags can also be created on the database.
+
+No front-end logic currently exists.  This is a work in progress- let me know if you have any advice!
