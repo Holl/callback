@@ -4,60 +4,51 @@ from tastypie.bundle import Bundle
 from tastypie.constants import ALL_WITH_RELATIONS
 from tastypie.fields import ToManyField, CharField, ToOneField
 from tastypie.resources import ModelResource, Resource
-from lecture.models import Student, Class, Project
+from accounts_manager.models import ActorProfile, Tag, ProductionProfile, Audition
 
 
-# class BareClassResource(ModelResource):
-#     class Meta:
-#         queryset = Class.objects.all()
-#         resource_name = "bare_class"
-#
-#
-# class BareClassProject(ModelResource):
-#     class Meta:
-#         queryset = Project.objects.all()
-#         resource_name = "bare_project"
+class ActorResource(ModelResource):
 
-class StudentResource(ModelResource):
-
-    klass = ToOneField('lecture.api.resources.ClassResource', 'klass', full=False)
-    projects = ToManyField('lecture.api.resources.ProjectResource', 'projects', full=False, null=True)
+    Tags = ToManyField('accounts_manager.api.resources.TagsResource', 'Tags', null=True)
+    Auditions = ToManyField('accounts_manager.api.resources.AuditionResource', 'Auditions', null=True)
 
     class Meta:
-        queryset = Student.objects.all()
-        resource_name = "student"
+        queryset = ActorProfile.objects.all()
+        resource_name = "actor_profile"
         authorization = Authorization()
-        # filtering = {
-        #     'project': ALL_WITH_RELATIONS,
-        #     'name': ['contains', 'icontains']
-        # }
 
 
+class TagResource(ModelResource):
 
-
-class ClassResource(ModelResource):
-    students = ToManyField(StudentResource, 'students', full=True, null=True)
+    Actor = ToManyField('accounts_manager.api.resources.ActorResource', 'Actors', null=True)
+    Auditions = ToManyField('accounts_manager.api.resources.AuditionResource', 'Auditions', null=True)
 
     class Meta:
-        allowed_method = ['get', 'post']
-        always_return_data = True
-        queryset = Class.objects.all()
-        resource_name = "class"
+        queryset = Tag.objects.all()
+        resource_name = "tag"
         authorization = Authorization()
-        filtering = {
-            'students': ALL_WITH_RELATIONS,
-            'title': ['contains', 'icontains'],
-            'start_date': ['gt', ]
-        }
 
+class ProductionResource(ModelResource):
 
-class ProjectResource(ModelResource):
-    student = ToOneField(StudentResource, 'student', full=True, null=True)
+    Tags = ToManyField('accounts_manager.api.resources.TagsResource', 'Tags', null=True)
+    Auditions = ToManyField('accounts_manager.api.resources.AuditionResource', 'Auditions', null=True)
 
     class Meta:
-        queryset = Project.objects.all()
-        resource_name = "project"
+        queryset = ProductionProfile.objects.all()
+        resource_name = "production_profile"
         authorization = Authorization()
+
+class AuditionResource(ModelResource):
+
+    Actor = ToManyField('accounts_manager.api.resources.ActorResource', 'Actors', null=True)
+    Production = ToOneField('accounts_manager.api.resources.ProductionResource', 'Production', null=True)
+
+
+    class Meta:
+        queryset = Audition.objects.all()
+        resource_name = "audition"
+        authorization = Authorization()
+
 
 
 

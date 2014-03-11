@@ -1,11 +1,31 @@
 from django.conf.urls import patterns, include, url
 from django.contrib.auth import views as auth_views
 from django.contrib import admin
+from tastypie.api import Api
+from accounts_manager.api.resources import ActorResource, TagResource, ProductionResource, AuditionResource
+
 admin.autodiscover()
+
+
+v1_api = Api(api_name="v1")
+v1_api.register(ActorResource())
+v1_api.register(TagResource())
+v1_api.register(ProductionResource())
+v1_api.register(AuditionResource())
+
+
+
+
+
+
 
 urlpatterns = patterns('',
 
+
+
     url(r'^admin/', include(admin.site.urls)),
+
+
 
     url('index/', 'accounts_manager.views.index', name='index'),
     url('signup/', 'accounts_manager.views.signup', name='signup'),
@@ -31,6 +51,8 @@ urlpatterns = patterns('',
     url(r'^accounts/password/reset/confirm/(?P<uidb64>[0-9A-Za-z]+)-(?P<token>.+)/$',
         auth_views.password_reset_confirm,
         name='password_reset_confirm'),
+
+    url(r'^api/', include(v1_api.urls)),
 
     url(r'accounts/', include('registration.backends.default.urls')),
 )

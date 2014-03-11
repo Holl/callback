@@ -23,15 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts_manager/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="840">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/callback/settings.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,10 +64,19 @@
       <file leaf-file-name="resources.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/accounts_manager/api/resources.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="19" selection-start="1266" selection-end="1266" vertical-scroll-proportion="0.64220184" vertical-offset="195" max-vertical-offset="1515">
+            <state line="48" column="33" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.6161137" vertical-offset="460" max-vertical-offset="1380">
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wsgi.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/callback/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,7 +104,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accounts_manager/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="523" max-vertical-offset="1200">
+            <state line="6" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1200">
               <folding />
             </state>
           </provider>
@@ -113,8 +113,10 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/callback/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="45" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="630">
-              <folding />
+            <state line="13" column="35" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="960">
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -129,7 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/callback/urls.py" />
         <option value="$PROJECT_DIR$/accounts_manager/admin.py" />
         <option value="$PROJECT_DIR$/accounts_manager/templates/profile_builder.html" />
         <option value="$PROJECT_DIR$/accounts_manager/models.py" />
@@ -137,11 +138,13 @@
         <option value="$PROJECT_DIR$/accounts_manager/forms.py" />
         <option value="$PROJECT_DIR$/accounts_manager/views.py" />
         <option value="$PROJECT_DIR$/callback/settings.py" />
+        <option value="$PROJECT_DIR$/callback/urls.py" />
+        <option value="$PROJECT_DIR$/accounts_manager/api/resources.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="51" />
+    <option name="y" value="44" />
     <option name="width" value="1285" />
     <option name="height" value="774" />
   </component>
@@ -184,6 +187,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="callback" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="callback" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="callback" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="callback" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="callback" />
@@ -442,6 +459,23 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c72663ef-4a6c-48fc-8836-83eb28a13cba" name="Default" comment="" />
@@ -451,7 +485,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="51" width="1285" height="774" extended-state="6" />
+    <frame x="0" y="44" width="1285" height="774" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -463,7 +497,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907802" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32907802" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -538,7 +572,9 @@
     <entry file="file://$PROJECT_DIR$/callback/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="45" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="630">
-          <folding />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -589,7 +625,9 @@
     <entry file="file://$PROJECT_DIR$/callback/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="45" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="630">
-          <folding />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -633,7 +671,9 @@
     <entry file="file://$PROJECT_DIR$/callback/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="45" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="630">
-          <folding />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -657,13 +697,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/callback/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="45" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accounts_manager/templates/profile_builder.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="11" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="240">
@@ -685,23 +718,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="840">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accounts_manager/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="26" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="523" max-vertical-offset="1200">
           <folding />
         </state>
       </provider>
@@ -720,6 +739,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/api/fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/accounts_manager/api/authorization.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654">
@@ -729,16 +762,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/api/fields.py">
+    <entry file="file://$PROJECT_DIR$/accounts_manager/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654">
+        <state line="6" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1200">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callback/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="422">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callback/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="35" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="960">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts_manager/api/resources.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="19" selection-start="1266" selection-end="1266" vertical-scroll-proportion="0.64220184" vertical-offset="195" max-vertical-offset="1515">
+        <state line="48" column="33" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.6161137" vertical-offset="460" max-vertical-offset="1380">
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
