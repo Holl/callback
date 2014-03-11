@@ -1,7 +1,10 @@
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect
+from django.template import context
 from accounts_manager.forms import SignupForm, LoginForm, ProfileForm
 from accounts_manager.models import MainUser
+
+
 
 def index(response):
     return render(response, 'index.html')
@@ -30,7 +33,7 @@ def login_page(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return redirect('/profile')
+                    return redirect('profile_builder/')
                 else:
                     return redirect('/login_page')
     else:
@@ -42,9 +45,11 @@ def profile_builder(request):
     if request.method == "POST":
         form = ProfileForm(request.POST)
         if form.is_valid():
-            user = MainUser.objects.create_user(
-                form.cleaned_data["first_name"],
-                )
+            # profile = (
+            #     form.cleaned_data["first_name"],
+            #     form.cleaned_data["last_name"],
+            #     form.cleaned_data["password"],
+            #     )
             return redirect('index/')
     else:
         form = ProfileForm

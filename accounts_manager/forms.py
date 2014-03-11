@@ -37,7 +37,14 @@ class LoginForm(forms.Form):
     )
 
 
-class ProfileForm(forms.Form):
+class ProfileForm(forms.ModelForm):
     class Meta(object):
         model = ActorProfile
-        fields = ["username","email","password"]
+        fields = ["first_name", "last_name",
+                  "bio", "headshot", "highlight_reel",
+                  "phone", "gender", "tag", "age",]
+
+    def save_model(self, request, obj):
+        obj.user = request.user
+        obj.save()
+

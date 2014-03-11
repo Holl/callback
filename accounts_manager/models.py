@@ -18,6 +18,9 @@ class MainUser(User):
 class Tag(models.Model):
     name = models.CharField(max_length=40)
 
+    def __unicode__(self):
+        return self.name
+
 
 # The actor profile, containing all the basic information an actor would need to store.
 
@@ -25,17 +28,17 @@ class Tag(models.Model):
 class ActorProfile(models.Model):
 
     GENDER = (
-        ('Female', 'Female'),
-        ('Male', 'Male'),
-        ('Both', 'Both'),
+        ('F', 'Female'),
+        ('M', 'Male'),
+        ('B', 'Both'),
     )
 
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     bio = models.CharField(max_length=500)
     created = models.DateTimeField(auto_now_add=True)
-    headshot = models.ImageField(upload_to="headshot_pictures")
-    highlight_reel = models.FileField(upload_to="highlight_reels")
+    headshot = models.ImageField(upload_to="headshot_pictures", blank=True)
+    highlight_reel = models.FileField(upload_to="highlight_reels", blank=True)
     phone = models.PositiveIntegerField()
     gender = models.CharField(max_length=1, choices=GENDER)
     user = models.OneToOneField(MainUser, related_name='actor')

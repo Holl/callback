@@ -39,6 +39,8 @@ INSTALLED_APPS = (
     'south',
     'accounts_manager',
     'registration',
+    'tastypie',
+    'tastypie_swagger'
 )
 
 MIDDLEWARE_CLASSES = (
