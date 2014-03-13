@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'south',
     'accounts_manager',
+    'auditioneer',
     'registration',
     'tastypie',
     'tastypie_swagger'

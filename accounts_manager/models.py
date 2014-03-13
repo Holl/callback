@@ -59,21 +59,4 @@ class ProductionProfile(models.Model):
     user = models.OneToOneField(MainUser)
 
 
-# Info stored for an individual audition.
 
-
-class Audition(models.Model):
-    name = models.CharField(max_length=50)
-    description = models.CharField(max_length=500)
-    picture = models.ImageField(upload_to="audition_pictures")
-    males = models.BinaryField()
-    females = models.BinaryField()
-    age_range = models.CharField(max_length=20)
-    num_parts = models.PositiveSmallIntegerField()
-    created = models.DateTimeField(auto_now_add=True)
-    location = models.CharField(max_length=200)
-    location_name = models.CharField(max_length=100)
-    audition_date = models.DateTimeField(null=True, blank=True)
-    production_user = models.ForeignKey(ProductionProfile)
-    actor_user = models.ManyToManyField(ActorProfile, null=True)
-    tag = models.ManyToManyField(Tag)

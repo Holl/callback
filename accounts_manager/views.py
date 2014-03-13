@@ -69,7 +69,7 @@ def production_profile_builder(request):
             usr = request.user
             submission.user = usr
             submission.save()
-            return redirect('/index/')
+            return redirect('/')
     else:
         form = ProductionProfileForm
     dataums = {'form': form}
