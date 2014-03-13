@@ -23,8 +23,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="authentication.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts_manager/api/authentication.py">
+      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts_manager/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="0" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.0" vertical-offset="404" max-vertical-offset="930">
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts_manager/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="21" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts_manager/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
               <folding />
@@ -32,70 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authorization.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts_manager/api/authorization.py">
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/callback/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fields.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts_manager/api/fields.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resources.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts_manager/api/resources.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="33" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="1380">
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readme.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="101" selection-start="320" selection-end="320" vertical-scroll-proportion="0.17772512" vertical-offset="0" max-vertical-offset="422">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/callback/wsgi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile_builder.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts_manager/templates/profile_builder.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="11" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="240">
-              <folding>
-                <marker date="1394151659000" expanded="true" signature="70:222" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts_manager/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="30" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="750">
+            <state line="97" column="0" selection-start="2287" selection-end="2332" vertical-scroll-proportion="0.8185484" vertical-offset="1049" max-vertical-offset="1545">
               <folding />
             </state>
           </provider>
@@ -104,19 +64,55 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accounts_manager/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1200">
+            <state line="67" column="56" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts_manager/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="30" selection-start="1909" selection-end="1935" vertical-scroll-proportion="0.0" vertical-offset="569" max-vertical-offset="1065">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/callback/urls.py">
+      <file leaf-file-name="production_profile_builder.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts_manager/templates/production_profile_builder.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="35" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="960">
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
+            <state line="7" column="23" selection-start="179" selection-end="179" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="255">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts_manager/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts_manager/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="300">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts_manager/api/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,21 +128,22 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/accounts_manager/admin.py" />
-        <option value="$PROJECT_DIR$/accounts_manager/templates/profile_builder.html" />
-        <option value="$PROJECT_DIR$/accounts_manager/models.py" />
-        <option value="$PROJECT_DIR$/accounts_manager/templates/base.html" />
-        <option value="$PROJECT_DIR$/accounts_manager/forms.py" />
-        <option value="$PROJECT_DIR$/accounts_manager/views.py" />
-        <option value="$PROJECT_DIR$/callback/settings.py" />
-        <option value="$PROJECT_DIR$/callback/urls.py" />
         <option value="$PROJECT_DIR$/accounts_manager/api/resources.py" />
         <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="$PROJECT_DIR$/accounts_manager/templates/base.html" />
+        <option value="$PROJECT_DIR$/callback/settings.py" />
+        <option value="$PROJECT_DIR$/callback/urls.py" />
+        <option value="$PROJECT_DIR$/accounts_manager/models.py" />
+        <option value="$PROJECT_DIR$/accounts_manager/views.py" />
+        <option value="$PROJECT_DIR$/accounts_manager/templates/production_profile_builder.html" />
+        <option value="$PROJECT_DIR$/accounts_manager/forms.py" />
+        <option value="$PROJECT_DIR$/accounts_manager/templates/profile_builder.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="44" />
-    <option name="width" value="1285" />
+    <option name="y" value="22" />
+    <option name="width" value="1280" />
     <option name="height" value="774" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -236,6 +233,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="callback" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="callback" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accounts_manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -250,10 +265,12 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../projects/angular/first_angular" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RunManager" selected="Django server.callback">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
@@ -340,27 +357,7 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="callback" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -386,7 +383,27 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="callback" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -443,7 +460,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="callback" />
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8001" />
+      <option name="port" value="8000" />
       <option name="host" value="" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
@@ -486,7 +503,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="44" width="1285" height="774" extended-state="6" />
+    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -494,11 +511,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24902724" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.265625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32907802" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22411348" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -523,21 +540,66 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/accounts_manager/views.py">
+    <entry file="file://$PROJECT_DIR$/accounts_manager/api/resources.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="26" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
+        <state line="48" column="33" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="1380" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="55" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="165" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callback/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/forms.py">
+    <entry file="file://$PROJECT_DIR$/accounts_manager/templates/profile_builder.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="840">
+        <state line="8" column="11" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="240">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="30" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1215">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/callback/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="35" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="26" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="840" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/callback/settings.py">
@@ -550,9 +612,7 @@
     <entry file="file://$PROJECT_DIR$/accounts_manager/templates/profile_builder.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="11" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="240">
-          <folding>
-            <marker date="1394151659000" expanded="true" signature="70:222" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -566,31 +626,27 @@
     <entry file="file://$PROJECT_DIR$/accounts_manager/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/callback/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="45" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="630">
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/views.py">
+    <entry file="file://$PROJECT_DIR$/callback/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="26" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
+        <state line="12" column="45" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="26" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/accounts_manager/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="840">
-          <folding />
-        </state>
+        <state line="45" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="163" max-vertical-offset="840" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/callback/settings.py">
@@ -603,9 +659,7 @@
     <entry file="file://$PROJECT_DIR$/accounts_manager/templates/profile_builder.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="11" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="240">
-          <folding>
-            <marker date="1394151659000" expanded="true" signature="70:222" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -619,39 +673,33 @@
     <entry file="file://$PROJECT_DIR$/accounts_manager/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="77" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1200">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/callback/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="45" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="630">
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/views.py">
+    <entry file="file://$PROJECT_DIR$/callback/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="26" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
+        <state line="12" column="45" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="630">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="26" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/accounts_manager/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="840">
-          <folding />
-        </state>
+        <state line="45" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="410" max-vertical-offset="840" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts_manager/templates/profile_builder.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="11" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="240">
-          <folding>
-            <marker date="1394151659000" expanded="true" signature="70:222" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -665,32 +713,17 @@
     <entry file="file://$PROJECT_DIR$/accounts_manager/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="77" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/callback/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="45" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="630">
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/admin.py">
+    <entry file="file://$PROJECT_DIR$/callback/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="677" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="445" />
+        <state line="12" column="45" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="630">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts_manager/templates/profile.html">
@@ -698,76 +731,46 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/templates/profile_builder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="240">
-          <folding>
-            <marker date="1394151659000" expanded="true" signature="70:222" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/django/db/models/fields/files.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="325" column="8" selection-start="12703" selection-end="12703" vertical-scroll-proportion="0.58924204" vertical-offset="4469" max-vertical-offset="5880" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/api/authorization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654" />
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/registration/backends/default/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.56398106" vertical-offset="238" max-vertical-offset="750" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/accounts_manager/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="30" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="750">
+        <state line="20" column="58" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="750">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/views.py">
+    <entry file="file://$PROJECT_DIR$/accounts_manager/api/resources.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="26" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/callback/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="16" selection-start="929" selection-end="930" vertical-scroll-proportion="0.0" vertical-offset="388" max-vertical-offset="1530">
-          <folding />
-        </state>
+        <state line="28" column="28" selection-start="1087" selection-end="1087" vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1290" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts_manager/api/authentication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="677">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts_manager/api/fields.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/forms.py">
+    <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/api/authorization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654">
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="1200">
-          <folding />
-        </state>
+        <state line="5" column="55" selection-start="274" selection-end="274" vertical-scroll-proportion="0.1527495" vertical-offset="0" max-vertical-offset="491" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/callback/wsgi.py">
@@ -777,27 +780,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/django/contrib/auth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="360" column="6" selection-start="12682" selection-end="12682" vertical-scroll-proportion="-2.3108695" vertical-offset="6163" max-vertical-offset="7695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/registration/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="4" selection-start="365" selection-end="365" vertical-scroll-proportion="0.13729978" vertical-offset="0" max-vertical-offset="4005">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="386">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="481">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="21" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.0" vertical-offset="404" max-vertical-offset="930">
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/templates/profile_builder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="19" selection-start="46" selection-end="46" vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/templates/production_profile_builder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="23" selection-start="179" selection-end="179" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/callback/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="35" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="960">
+        <state line="33" column="74" selection-start="933" selection-end="933" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="30" selection-start="1909" selection-end="1935" vertical-scroll-proportion="0.0" vertical-offset="569" max-vertical-offset="1065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="56" selection-start="1904" selection-end="1904" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1275">
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/api/resources.py">
+    <entry file="file://$PROJECT_DIR$/callback/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="33" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.0" vertical-offset="460" max-vertical-offset="1380">
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="101" selection-start="320" selection-end="320" vertical-scroll-proportion="0.17772512" vertical-offset="0" max-vertical-offset="422">
+        <state line="97" column="0" selection-start="2287" selection-end="2332" vertical-scroll-proportion="0.8185484" vertical-offset="1049" max-vertical-offset="1545">
           <folding />
         </state>
       </provider>

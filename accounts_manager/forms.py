@@ -1,4 +1,5 @@
-from accounts_manager.models import MainUser, ActorProfile
+from django.http import request
+from accounts_manager.models import MainUser, ActorProfile, ProductionProfile
 from django import forms
 
 __author__ = 'holl'
@@ -40,11 +41,16 @@ class LoginForm(forms.Form):
 class ProfileForm(forms.ModelForm):
     class Meta(object):
         model = ActorProfile
+
         fields = ["first_name", "last_name",
                   "bio", "headshot", "highlight_reel",
                   "phone", "gender", "tag", "age",]
 
-    def save_model(self, request, obj):
-        obj.user = request.user
-        obj.save()
+class ProductionProfileForm(forms.ModelForm):
 
+    class Meta(object):
+
+        model = ProductionProfile
+
+        fields = ["name", "bio",
+                  "bio", "company_pic",]

@@ -31,6 +31,7 @@ urlpatterns = patterns('',
     url('signup/', 'accounts_manager.views.signup', name='signup'),
     url('login_page/', 'accounts_manager.views.login_page', name='login_page'),
     url('profile_builder/', 'accounts_manager.views.profile_builder', name='profile_builder'),
+    url('production_profile_builder/', 'accounts_manager.views.production_profile_builder', name='production_profile_builder'),
 
 
     url(r'^accounts/password/change/$',

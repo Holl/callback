@@ -94,3 +94,5 @@ MEDIA_URL = "/media/"
 
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 EMAIL_FILE_PATH = 'emails/'
+
+AUTH_USER_MODEL = 'accounts_manager.MainUser'

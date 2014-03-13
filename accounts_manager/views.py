@@ -1,9 +1,9 @@
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render, redirect
 from django.template import context
-from accounts_manager.forms import SignupForm, LoginForm, ProfileForm
-from accounts_manager.models import MainUser
-
+from registration.models import User
+from accounts_manager.forms import SignupForm, LoginForm, ProfileForm, ProductionProfileForm
+from accounts_manager.models import MainUser, ActorProfile
 
 
 def index(response):
@@ -45,13 +45,27 @@ def profile_builder(request):
     if request.method == "POST":
         form = ProfileForm(request.POST)
         if form.is_valid():
-            # profile = (
-            #     form.cleaned_data["first_name"],
-            #     form.cleaned_data["last_name"],
-            #     form.cleaned_data["password"],
-            #     )
-            return redirect('index/')
+            submission = form.save(commit=False)
+            usr = request.user
+            submission.user = usr
+            submission.save()
+            return redirect('/index/')
     else:
         form = ProfileForm
     dataums = {'form': form}
     return render(request, 'profile_builder.html', dataums)
+
+
+def production_profile_builder(request):
+    if request.method == "POST":
+        form = ProductionProfileForm(request.POST)
+        if form.is_valid():
+            submission = form.save(commit=False)
+            usr = request.user
+            submission.user = usr
+            submission.save()
+            return redirect('/index/')
+    else:
+        form = ProductionProfileForm
+    dataums = {'form': form}
+    return render(request, 'production_profile_builder.html', dataums)
