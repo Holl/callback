@@ -1,0 +1,56 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <link rel="stylesheet" href="{% static 'scss/map.css' %}">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="{% static 'js/vendor/jquery.js' %}"></script>
+
+    <!-- Google Maps -->
+
+    <script src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyADPTRE7khpljnb26lIeUR6jd6fvQTIwRc&sensor=false&libraries=geometry"></script>
+
+
+    <!-- Angular -->
+    <script type="text/javascript" src="{% static 'js/vendor/angular.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/vendor/angular-route.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/vendor/angular-resource.js' %}"></script>
+
+    <script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/controllers/AuditionCtrl.js' %}"></script>
+
+    <!-- Regulah Old JS -->
+
+
+</head>
+<body>
+<div id="header">
+        {% block header %}
+	<a href="{% url 'index' %}">{% trans "Home" %}</a> |
+    <a href="{% url 'index' %}">{% trans "Auditions" %}</a> |
+    <a href="{% url 'index' %}">{% trans "About" %}</a> |
+    <a href="{% url 'index' %}">{% trans "Contact" %}</a>
+
+    <div style="float: right">
+	{% if user.is_authenticated %}
+	{% trans "Logged in" %}: <a href="{% url 'profile_builder' %}">{{ user.username }}</a>
+	(<a href="{% url 'logout' %}">{% trans "Log out" %}</a> |
+	<a href="{% url 'auth_password_change' %}">{% trans "Change password" %}</a>)
+	{% else %}
+	<a href="{% url 'login_page' %}">{% trans "Log in" %}</a>
+	{% endif %}
+    </div>
+	<hr />
+        {% endblock %}
+    </div>
+    <div ng-app="auditioneer">
+        <div ng-view></div>
+    </div>
+
+</body>
+</html>

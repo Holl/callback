@@ -36,6 +36,8 @@ urlpatterns = patterns('',
     url(r'signup/choice/$', 'accounts_manager.views.choice', name='choice'),
     url(r'logout/$', 'accounts_manager.views.logout_user', name='logout'),
 
+    url(r'audition/$', 'auditioneer.views.angular', name='audition'),
+
     url(r'^accounts/password/change/$',
         auth_views.password_change,
         name='password_change'),
