@@ -27,12 +27,14 @@ urlpatterns = patterns('',
 
 
 
-    url('index/', 'accounts_manager.views.index', name='index'),
-    url('signup/', 'accounts_manager.views.signup', name='signup'),
-    url('login_page/', 'accounts_manager.views.login_page', name='login_page'),
-    url('profile_builder/', 'accounts_manager.views.profile_builder', name='profile_builder'),
-    url('production_profile_builder/', 'accounts_manager.views.production_profile_builder', name='production_profile_builder'),
-
+    url(r'^$', 'accounts_manager.views.index', name='index'),
+    url(r'signup/$', 'accounts_manager.views.signup', name='signup'),
+    url(r'login/$', 'accounts_manager.views.login_page', name='login_page'),
+    url(r'profile/builder/actor/$', 'accounts_manager.views.profile_builder', name='profile_builder'),
+    url(r'profile/builder/production/$', 'accounts_manager.views.production_profile_builder',
+        name='production_profile_builder'),
+    url(r'signup/choice/$', 'accounts_manager.views.choice', name='choice'),
+    url(r'logout/$', 'accounts_manager.views.logout_user', name='logout'),
 
     url(r'^accounts/password/change/$',
         auth_views.password_change,

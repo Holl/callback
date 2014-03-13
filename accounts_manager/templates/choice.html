@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h2>Are you an Actor, or are you looking for Actors?</h2>
+
+    <div>
+    <div>I'm looking to find auditions:</div>
+    <div><a href="{% url 'profile_builder' %}">I'm an Actor!</a></div>
+    </div>
+
+    <div>
+    <div>I'm looking to find actors:</div>
+    <div><a href="{% url 'production_profile_builder'%}">I'm a Production Company!</a></div>
+    </div>
+
+{% endblock %}

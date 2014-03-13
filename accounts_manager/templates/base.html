@@ -19,7 +19,7 @@
     <div style="float: right">
 	{% if user.is_authenticated %}
 	{% trans "Logged in" %}: <a href="{% url 'profile_builder' %}">{{ user.username }}</a>
-	(<a href="{% url 'auth_logout' %}">{% trans "Log out" %}</a> |
+	(<a href="{% url 'logout' %}">{% trans "Log out" %}</a> |
 	<a href="{% url 'auth_password_change' %}">{% trans "Change password" %}</a>)
 	{% else %}
 	<a href="{% url 'login_page' %}">{% trans "Log in" %}</a>

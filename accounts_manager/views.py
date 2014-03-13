@@ -1,4 +1,4 @@
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import render, redirect
 from django.template import context
 from registration.models import User
@@ -9,6 +9,7 @@ from accounts_manager.models import MainUser, ActorProfile
 def index(response):
     return render(response, 'index.html')
 
+
 def signup(request):
     if request.method == "POST":
         form = SignupForm(request.POST)
@@ -18,7 +19,11 @@ def signup(request):
                 form.cleaned_data["email"],
                 form.cleaned_data["password"],
                 )
-            return redirect('profile/')
+            username=form.cleaned_data["username"]
+            password=form.cleaned_data["password"]
+            login_user=authenticate(username=username, password=password)
+            login(request, login_user)
+            return redirect('choice/')
     else:
         form = SignupForm
     dataums = {'form': form}
@@ -33,7 +38,7 @@ def login_page(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return redirect('profile_builder/')
+                    return redirect('/')
                 else:
                     return redirect('/login_page')
     else:
@@ -49,7 +54,7 @@ def profile_builder(request):
             usr = request.user
             submission.user = usr
             submission.save()
-            return redirect('/index/')
+            return redirect('/')
     else:
         form = ProfileForm
     dataums = {'form': form}
@@ -69,3 +74,11 @@ def production_profile_builder(request):
         form = ProductionProfileForm
     dataums = {'form': form}
     return render(request, 'production_profile_builder.html', dataums)
+
+
+def choice(response):
+    return render(response, 'choice.html')
+
+def logout_user(request):
+    logout(request)
+    return redirect ('/')
