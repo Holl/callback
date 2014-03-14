@@ -1,3 +1,21 @@
-#map-canvas {
-  width: 300px;
-  height: 300px; }
+.angular-google-map-container {
+  height: 400px; }
+
+#map2 {
+  height: 200px;
+  width: 200px; }
+
+.wrapper {
+  position: relative; }
+
+#controller {
+  height: 300px;
+  width: 100px;
+  background-color: grey;
+  position: absolute;
+  float: right;
+  top: 10%;
+  left: 90%;
+  z-index: 99; }
+  #controller div {
+    color: white; }

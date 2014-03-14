@@ -2,7 +2,7 @@
  * Created by Holl on 3/12/14.
  */
 
-var auditioneer = angular.module('auditioneer', ['ngRoute']);
+var auditioneer = angular.module('auditioneer', ['ngRoute', 'google-maps']);
 
 auditioneer.config(['$routeProvider', function($routeProvider) {
     $routeProvider.

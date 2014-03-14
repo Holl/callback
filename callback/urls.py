@@ -2,7 +2,8 @@ from django.conf.urls import patterns, include, url
 from django.contrib.auth import views as auth_views
 from django.contrib import admin
 from tastypie.api import Api
-from accounts_manager.api.resources import ActorResource, TagResource, ProductionResource, AuditionResource
+from accounts_manager.api.resources import ActorResource, TagResource, ProductionResource, AuditionResource, \
+    PartResource
 
 admin.autodiscover()
 
@@ -12,6 +13,7 @@ v1_api.register(ActorResource())
 v1_api.register(TagResource())
 v1_api.register(ProductionResource())
 v1_api.register(AuditionResource())
+v1_api.register(PartResource())
 
 
 
@@ -36,7 +38,7 @@ urlpatterns = patterns('',
     url(r'signup/choice/$', 'accounts_manager.views.choice', name='choice'),
     url(r'logout/$', 'accounts_manager.views.logout_user', name='logout'),
 
-    url(r'audition/$', 'auditioneer.views.angular', name='audition'),
+    url(r'^audition/$', 'auditioneer.views.angular', name='audition'),
 
     url(r'^accounts/password/change/$',
         auth_views.password_change,

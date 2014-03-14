@@ -1,2 +1,18 @@
-<div id="map-canvas"></div>
-<script type="text/javascript" src="/auditioneer/static/js/map.js"></script>
+<div class="wrapper">
+
+    <google-map center="map.center" zoom="map.zoom">
+        <marker coords="searchLocationMarker.coords" >
+        </marker>
+    </google-map>
+
+
+
+    <div id="controller">
+        <div>
+            This is the controller which will be used
+            to change what auditions are seen.
+        </div>
+        <button>Change to Table</button>
+    </div>
+
+</div>
