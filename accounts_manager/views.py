@@ -79,6 +79,7 @@ def production_profile_builder(request):
 def choice(response):
     return render(response, 'choice.html')
 
+
 def logout_user(request):
     logout(request)
     return redirect ('/')

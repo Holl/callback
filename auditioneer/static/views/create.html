@@ -1,9 +1,35 @@
-<div class="wrapper">
+<div class="wrapper_create">
 
-    <google-map center="map.center" zoom="map.zoom" id="map-2">
-        <marker coords="searchLocationMarker.coords" >
-        </marker>
+    <google-map center="map.center" zoom="map.zoom">
     </google-map>
+</div>
 
+
+
+<div class="create_form">
+    <form ng-submit="submitForm()">
+        <div>
+            {{ request.user }}
+        </div>
+        <div>
+            Title: <input type="text" ng-model="audition.name">
+        </div>
+        <div>
+            Description: <input type="text" ng-model="audition.description">
+        </div>
+        <div>
+            Address: <input type="text" ng-model="audition.location_name">
+        </div>
+        <div>
+            Picture: <input type="file" ng-model="audition.picture">
+        </div>
+        <div>
+        Tags:<select multiple ng-model= "audition.tag" ng-options="tags.resource_uri as tag.name for tag in tags"></select>
+        </div>
+
+
+        <input type="submit" value="Add Audition">
+    </form>
+</div>
 
 

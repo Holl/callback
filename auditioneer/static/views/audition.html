@@ -1,18 +1,8 @@
-<div class="wrapper">
+<h1> {{ audition.name }}</h1>
+<p> {{ audition.description }}</p>
+<p>{{ audition.audition_date }}</p>
+<p>{{ audition.location_name }}</p>
+<p>{{ audition.production_user }}</p>
+<p>{{ audition.tag }}</p>
 
-    <google-map center="map.center" zoom="map.zoom">
-        <marker coords="searchLocationMarker.coords" >
-        </marker>
-    </google-map>
 
-
-
-    <div id="controller">
-        <div>
-            This is the controller which will be used
-            to change what auditions are seen.
-        </div>
-        <button>Change to Table</button>
-    </div>
-
-</div>

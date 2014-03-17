@@ -8,105 +8,63 @@ from django.db import models
 class Migration(SchemaMigration):
 
     def forwards(self, orm):
-        # Adding model 'MainUser'
-        db.create_table(u'accounts_manager_mainuser', (
-            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('password', self.gf('django.db.models.fields.CharField')(max_length=128)),
-            ('last_login', self.gf('django.db.models.fields.DateTimeField')(default=datetime.datetime.now)),
-            ('is_superuser', self.gf('django.db.models.fields.BooleanField')(default=False)),
-            ('username', self.gf('django.db.models.fields.CharField')(unique=True, max_length=30)),
-            ('first_name', self.gf('django.db.models.fields.CharField')(max_length=30, blank=True)),
-            ('last_name', self.gf('django.db.models.fields.CharField')(max_length=30, blank=True)),
-            ('email', self.gf('django.db.models.fields.EmailField')(max_length=75, blank=True)),
-            ('is_staff', self.gf('django.db.models.fields.BooleanField')(default=False)),
-            ('is_active', self.gf('django.db.models.fields.BooleanField')(default=True)),
-            ('date_joined', self.gf('django.db.models.fields.DateTimeField')(default=datetime.datetime.now)),
-        ))
-        db.send_create_signal(u'accounts_manager', ['MainUser'])
-
-        # Adding M2M table for field groups on 'MainUser'
-        m2m_table_name = db.shorten_name(u'accounts_manager_mainuser_groups')
-        db.create_table(m2m_table_name, (
-            ('id', models.AutoField(verbose_name='ID', primary_key=True, auto_created=True)),
-            ('mainuser', models.ForeignKey(orm[u'accounts_manager.mainuser'], null=False)),
-            ('group', models.ForeignKey(orm[u'auth.group'], null=False))
-        ))
-        db.create_unique(m2m_table_name, ['mainuser_id', 'group_id'])
-
-        # Adding M2M table for field user_permissions on 'MainUser'
-        m2m_table_name = db.shorten_name(u'accounts_manager_mainuser_user_permissions')
-        db.create_table(m2m_table_name, (
-            ('id', models.AutoField(verbose_name='ID', primary_key=True, auto_created=True)),
-            ('mainuser', models.ForeignKey(orm[u'accounts_manager.mainuser'], null=False)),
-            ('permission', models.ForeignKey(orm[u'auth.permission'], null=False))
-        ))
-        db.create_unique(m2m_table_name, ['mainuser_id', 'permission_id'])
-
-        # Adding model 'Tag'
-        db.create_table(u'accounts_manager_tag', (
-            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('name', self.gf('django.db.models.fields.CharField')(max_length=40)),
-        ))
-        db.send_create_signal(u'accounts_manager', ['Tag'])
-
-        # Adding model 'ActorProfile'
-        db.create_table(u'accounts_manager_actorprofile', (
-            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('first_name', self.gf('django.db.models.fields.CharField')(max_length=50)),
-            ('last_name', self.gf('django.db.models.fields.CharField')(max_length=50)),
-            ('bio', self.gf('django.db.models.fields.CharField')(max_length=500)),
-            ('created', self.gf('django.db.models.fields.DateTimeField')(auto_now_add=True, blank=True)),
-            ('headshot', self.gf('django.db.models.fields.files.ImageField')(max_length=100, blank=True)),
-            ('highlight_reel', self.gf('django.db.models.fields.files.FileField')(max_length=100, blank=True)),
-            ('phone', self.gf('django.db.models.fields.PositiveIntegerField')()),
-            ('gender', self.gf('django.db.models.fields.CharField')(max_length=1)),
-            ('user', self.gf('django.db.models.fields.related.OneToOneField')(related_name='actor', unique=True, to=orm['accounts_manager.MainUser'])),
-            ('age', self.gf('django.db.models.fields.PositiveSmallIntegerField')()),
-        ))
-        db.send_create_signal(u'accounts_manager', ['ActorProfile'])
-
-        # Adding M2M table for field tag on 'ActorProfile'
-        m2m_table_name = db.shorten_name(u'accounts_manager_actorprofile_tag')
-        db.create_table(m2m_table_name, (
-            ('id', models.AutoField(verbose_name='ID', primary_key=True, auto_created=True)),
-            ('actorprofile', models.ForeignKey(orm[u'accounts_manager.actorprofile'], null=False)),
-            ('tag', models.ForeignKey(orm[u'accounts_manager.tag'], null=False))
-        ))
-        db.create_unique(m2m_table_name, ['actorprofile_id', 'tag_id'])
-
-        # Adding model 'ProductionProfile'
-        db.create_table(u'accounts_manager_productionprofile', (
+        # Adding model 'Audition'
+        db.create_table(u'auditioneer_audition', (
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('name', self.gf('django.db.models.fields.CharField')(max_length=50)),
-            ('bio', self.gf('django.db.models.fields.CharField')(max_length=500)),
+            ('description', self.gf('django.db.models.fields.CharField')(max_length=500)),
+            ('picture', self.gf('django.db.models.fields.files.ImageField')(max_length=100, null=True, blank=True)),
             ('created', self.gf('django.db.models.fields.DateTimeField')(auto_now_add=True, blank=True)),
-            ('company_pic', self.gf('django.db.models.fields.files.ImageField')(max_length=100, blank=True)),
-            ('user', self.gf('django.db.models.fields.related.OneToOneField')(to=orm['accounts_manager.MainUser'], unique=True)),
+            ('latitude', self.gf('django.db.models.fields.IntegerField')()),
+            ('longitude', self.gf('django.db.models.fields.IntegerField')()),
+            ('location_name', self.gf('django.db.models.fields.CharField')(max_length=100)),
+            ('audition_date', self.gf('django.db.models.fields.DateTimeField')(null=True, blank=True)),
+            ('production_user', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['accounts_manager.ProductionProfile'])),
         ))
-        db.send_create_signal(u'accounts_manager', ['ProductionProfile'])
+        db.send_create_signal(u'auditioneer', ['Audition'])
+
+        # Adding M2M table for field actor_user on 'Audition'
+        m2m_table_name = db.shorten_name(u'auditioneer_audition_actor_user')
+        db.create_table(m2m_table_name, (
+            ('id', models.AutoField(verbose_name='ID', primary_key=True, auto_created=True)),
+            ('audition', models.ForeignKey(orm[u'auditioneer.audition'], null=False)),
+            ('actorprofile', models.ForeignKey(orm[u'accounts_manager.actorprofile'], null=False))
+        ))
+        db.create_unique(m2m_table_name, ['audition_id', 'actorprofile_id'])
+
+        # Adding M2M table for field tag on 'Audition'
+        m2m_table_name = db.shorten_name(u'auditioneer_audition_tag')
+        db.create_table(m2m_table_name, (
+            ('id', models.AutoField(verbose_name='ID', primary_key=True, auto_created=True)),
+            ('audition', models.ForeignKey(orm[u'auditioneer.audition'], null=False)),
+            ('tag', models.ForeignKey(orm[u'accounts_manager.tag'], null=False))
+        ))
+        db.create_unique(m2m_table_name, ['audition_id', 'tag_id'])
+
+        # Adding model 'Part'
+        db.create_table(u'auditioneer_part', (
+            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
+            ('name', self.gf('django.db.models.fields.CharField')(max_length=50)),
+            ('description', self.gf('django.db.models.fields.CharField')(max_length=500)),
+            ('gender', self.gf('django.db.models.fields.CharField')(max_length=1)),
+            ('age_range', self.gf('django.db.models.fields.CharField')(max_length=10)),
+            ('audition', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['auditioneer.Audition'])),
+        ))
+        db.send_create_signal(u'auditioneer', ['Part'])
 
 
     def backwards(self, orm):
-        # Deleting model 'MainUser'
-        db.delete_table(u'accounts_manager_mainuser')
+        # Deleting model 'Audition'
+        db.delete_table(u'auditioneer_audition')
 
-        # Removing M2M table for field groups on 'MainUser'
-        db.delete_table(db.shorten_name(u'accounts_manager_mainuser_groups'))
+        # Removing M2M table for field actor_user on 'Audition'
+        db.delete_table(db.shorten_name(u'auditioneer_audition_actor_user'))
 
-        # Removing M2M table for field user_permissions on 'MainUser'
-        db.delete_table(db.shorten_name(u'accounts_manager_mainuser_user_permissions'))
+        # Removing M2M table for field tag on 'Audition'
+        db.delete_table(db.shorten_name(u'auditioneer_audition_tag'))
 
-        # Deleting model 'Tag'
-        db.delete_table(u'accounts_manager_tag')
-
-        # Deleting model 'ActorProfile'
-        db.delete_table(u'accounts_manager_actorprofile')
-
-        # Removing M2M table for field tag on 'ActorProfile'
-        db.delete_table(db.shorten_name(u'accounts_manager_actorprofile_tag'))
-
-        # Deleting model 'ProductionProfile'
-        db.delete_table(u'accounts_manager_productionprofile')
+        # Deleting model 'Part'
+        db.delete_table(u'auditioneer_part')
 
 
     models = {
@@ -155,6 +113,30 @@ class Migration(SchemaMigration):
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '40'})
         },
+        u'auditioneer.audition': {
+            'Meta': {'object_name': 'Audition'},
+            'actor_user': ('django.db.models.fields.related.ManyToManyField', [], {'to': u"orm['accounts_manager.ActorProfile']", 'null': 'True', 'symmetrical': 'False'}),
+            'audition_date': ('django.db.models.fields.DateTimeField', [], {'null': 'True', 'blank': 'True'}),
+            'created': ('django.db.models.fields.DateTimeField', [], {'auto_now_add': 'True', 'blank': 'True'}),
+            'description': ('django.db.models.fields.CharField', [], {'max_length': '500'}),
+            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'latitude': ('django.db.models.fields.IntegerField', [], {}),
+            'location_name': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
+            'longitude': ('django.db.models.fields.IntegerField', [], {}),
+            'name': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
+            'picture': ('django.db.models.fields.files.ImageField', [], {'max_length': '100', 'null': 'True', 'blank': 'True'}),
+            'production_user': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['accounts_manager.ProductionProfile']"}),
+            'tag': ('django.db.models.fields.related.ManyToManyField', [], {'to': u"orm['accounts_manager.Tag']", 'symmetrical': 'False'})
+        },
+        u'auditioneer.part': {
+            'Meta': {'object_name': 'Part'},
+            'age_range': ('django.db.models.fields.CharField', [], {'max_length': '10'}),
+            'audition': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['auditioneer.Audition']"}),
+            'description': ('django.db.models.fields.CharField', [], {'max_length': '500'}),
+            'gender': ('django.db.models.fields.CharField', [], {'max_length': '1'}),
+            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'name': ('django.db.models.fields.CharField', [], {'max_length': '50'})
+        },
         u'auth.group': {
             'Meta': {'object_name': 'Group'},
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
@@ -177,4 +159,4 @@ class Migration(SchemaMigration):
         }
     }
 
-    complete_apps = ['accounts_manager']
+    complete_apps = ['auditioneer']

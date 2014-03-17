@@ -1,0 +1,32 @@
+
+
+{% extends "base.html" %}
+
+{% load static %}
+
+
+
+
+
+{% block content %}
+<script src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyADPTRE7khpljnb26lIeUR6jd6fvQTIwRc&sensor=false&libraries=geometry"></script>
+<script type="text/javascript" src="{% static 'js/vendor/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/map.js' %}"></script>
+
+    <div style="width: 49%">
+    <form method="post">
+    <p> Profile Details: </p>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" name="submit" value="Submit" />
+    </form>
+
+
+    </div>
+
+    <div id='map-canvas' style="height:500px; width:48%;float:right; position:relative; margin-bottom: 400px">
+
+    </div>
+
+{% endblock %}
+
