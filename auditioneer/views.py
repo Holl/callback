@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from accounts_manager.models import ProductionProfile
 from auditioneer.forms import AuditionForm, PartForm
 
 
@@ -12,7 +13,7 @@ def audition_builder(request):
         if form.is_valid():
             submission = form.save(commit=False)
             usr = request.user
-            submission.user = usr
+            submission.production_user = ProductionProfile.objects.get(user=usr)
             submission.save()
             return redirect('/')
     else:
