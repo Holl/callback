@@ -9,8 +9,8 @@ from auditioneer.models import Audition, Part
 
 class ActorResource(ModelResource):
 
-    Tags = ToManyField('accounts_manager.api.resources.TagsResource', 'Tags', null=True)
-    Auditions = ToManyField('accounts_manager.api.resources.AuditionResource', 'Auditions', null=True)
+    Tags = ToManyField('accounts_manager.api.resources.TagsResource', 'tags', null=True)
+    Auditions = ToManyField('accounts_manager.api.resources.AuditionResource', 'auditions', null=True)
 
     class Meta:
         queryset = ActorProfile.objects.all()
@@ -20,8 +20,8 @@ class ActorResource(ModelResource):
 
 class TagResource(ModelResource):
 
-    Actor = ToManyField('accounts_manager.api.resources.ActorResource', 'Actors', null=True)
-    Auditions = ToManyField('accounts_manager.api.resources.AuditionResource', 'Auditions', null=True)
+    Actor = ToManyField('accounts_manager.api.resources.ActorResource', 'actors', null=True)
+    Auditions = ToManyField('accounts_manager.api.resources.AuditionResource', 'auditions', null=True)
 
     class Meta:
         queryset = Tag.objects.all()
@@ -30,8 +30,8 @@ class TagResource(ModelResource):
 
 class ProductionResource(ModelResource):
 
-    Tags = ToManyField('accounts_manager.api.resources.TagsResource', 'Tags', null=True)
-    Auditions = ToManyField('accounts_manager.api.resources.AuditionResource', 'Auditions', null=True)
+    Tags = ToManyField('accounts_manager.api.resources.TagsResource', 'tags', null=True)
+    Auditions = ToManyField('accounts_manager.api.resources.AuditionResource', 'auditions', null=True)
 
     class Meta:
         queryset = ProductionProfile.objects.all()
@@ -40,9 +40,9 @@ class ProductionResource(ModelResource):
 
 class AuditionResource(ModelResource):
 
-    Actor = ToManyField('accounts_manager.api.resources.ActorResource', 'Actors', null=True)
-    Production = ToOneField('accounts_manager.api.resources.ProductionResource', 'Production', null=True)
-    Parts = ToManyField('accounts_manager.api.resources.PartResource', 'Parts', null=True)
+    actors = ToManyField('accounts_manager.api.resources.ActorResource', 'actor_user', null=True)
+    production = ToOneField('accounts_manager.api.resources.ProductionResource', 'production_user', null=True)
+    parts = ToManyField('accounts_manager.api.resources.PartResource', 'parts', null=True, full=True)
 
 
     class Meta:
@@ -52,7 +52,7 @@ class AuditionResource(ModelResource):
 
 class PartResource(ModelResource):
 
-    Audition = ToOneField('accouts_manager.api.resources.AuditionResource', 'Auditions', null=True)
+    Audition = ToOneField('accounts_manager.api.resources.AuditionResource', 'audition')
 
 
     class Meta:

@@ -1,7 +1,13 @@
 <div class="wrapper">
 
     <google-map center="map.center" zoom="map.zoom">
-            <marker ng-repeat="m in markers" coords="m">
+            <marker ng-repeat="m in markers" coords="m"  ng-click="m.showWindow = true" >
+                <window show='hide'>
+                    {{ m.name }}
+                    {{ m.description }}
+                    <a href="{{ m.id }}"></a>
+
+                </window>
             </marker>
     </google-map>
 

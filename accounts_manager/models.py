@@ -58,5 +58,7 @@ class ProductionProfile(models.Model):
     company_pic = models.ImageField(upload_to="company_pictures", blank=True)
     user = models.OneToOneField(MainUser)
 
+    def __unicode__(self):
+        return self.name
 
 

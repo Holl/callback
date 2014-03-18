@@ -36,7 +36,7 @@ urlpatterns = patterns('',
     url(r'profile/builder/production/$', 'accounts_manager.views.production_profile_builder',
         name='production_profile_builder'),
     url(r'builder/audition/$', 'auditioneer.views.audition_builder', name='audition_builder'),
-    url(r'builder/part/$', 'auditioneer.views.part_builder', name='part_builder'),
+    url(r'builder/parts/(\d+)/$', 'auditioneer.views.part_builder', name='part_builder'),
     url(r'signup/choice/$', 'accounts_manager.views.choice', name='choice'),
     url(r'logout/$', 'accounts_manager.views.logout_user', name='logout'),
 

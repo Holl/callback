@@ -4,6 +4,13 @@
 <p>{{ audition.location_name }}</p>
 <p>{{ audition.production_user }}</p>
 <p>{{ audition.tag }}</p>
-<p>{{ audition.part }}</p>
+
+<a href="/builder/part">Add Parts</a>
+
+<div ng-repeat="part in audition.parts">
+    {{ part.name }}
+
+</div>
+
 
 

@@ -6,7 +6,8 @@ __author__ = 'holl'
 
 class AuditionForm(forms.ModelForm):
 
-
+    latitude = forms.CharField(widget=forms.HiddenInput())
+    longitude = forms.CharField(widget=forms.HiddenInput())
 
     class Meta(object):
         model = Audition
@@ -16,7 +17,9 @@ class AuditionForm(forms.ModelForm):
 
 class PartForm(forms.ModelForm):
 
+
+
     class Meta(object):
         model = Part
         fields = ["name", "description",
-                  "gender", "age_range",]
+                  "gender", "age_range"]

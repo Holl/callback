@@ -15,6 +15,9 @@ class Audition(models.Model):
     actor_user = models.ManyToManyField(ActorProfile, null=True)
     tag = models.ManyToManyField(Tag)
 
+    def __unicode__(self):
+        return self.name
+
     def total_parts(self):
         return len()
 
@@ -31,4 +34,7 @@ class Part(models.Model):
     description = models.CharField(max_length=500)
     gender = models.CharField(max_length=1, choices=GENDER)
     age_range = models.CharField(max_length=10)
-    audition = models.ForeignKey(Audition)
+    audition = models.ForeignKey(Audition, related_name="parts")
+
+    def __unicode__(self):
+        return self.name
