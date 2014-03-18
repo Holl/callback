@@ -12,6 +12,7 @@ function MapCtrl($scope, $http) {
 
     $http.get('/api/v1/audition/?format=json').
         success(function(points){
+            console.log(points.objects)
             $scope.markers = points.objects
         });
 
