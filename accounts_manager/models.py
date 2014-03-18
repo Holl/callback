@@ -15,6 +15,8 @@ class MainUser(AbstractUser):
             return False
 
 
+
+
 # Tags, for matching actors and auditions
 
 
@@ -59,7 +61,7 @@ class ProductionProfile(models.Model):
     bio = models.CharField(max_length=500)
     created = models.DateTimeField(auto_now_add=True)
     company_pic = models.ImageField(upload_to="company_pictures", blank=True)
-    user = models.OneToOneField(MainUser)
+    user = models.OneToOneField(MainUser, related_name='producer')
 
     def __unicode__(self):
         return self.name

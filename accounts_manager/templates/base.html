@@ -19,13 +19,16 @@
     <div style="float: right">
 	{% if user.is_authenticated %}
 	{% trans "Logged in" %}:
-        {% if user.is_actor %}
-            <a href="{% url 'profile_builder' %}">{{ user.username }}</a>
+
+	    {% if user.is_actor %}
+            <a href="/audition/#/profile/{{user.actor.id}}">{{ user.username }}</a> (
+            <a href="{% url 'profile_builder' %}">{% trans "Edit Profile" %}</a>
         {% else %}
-            <a href="{% url 'production_profile_builder' %}">{{ user.username }}</a>
+            <a href="/audition/#/{{user.producer.id}}">{{ user.username }}</a> (
+            <a href="{% url 'production_profile_builder' %}">{% trans "Edit Profile" %}</a>
         {% endif %}
-	(<a href="{% url 'logout' %}">{% trans "Log out" %}</a> |
-	<a href="audition/#/profile/{{user.id}}">{% trans "Profile" %}</a> |
+        |
+        <a href="{% url 'logout' %}">{% trans "Log out" %}</a> |
 	<a href="{% url 'auth_password_change' %}">{% trans "Change password" %}</a>)
 	{% else %}
 	<a href="{% url 'login_page' %}">{% trans "Log in" %}</a>
