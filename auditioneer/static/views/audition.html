@@ -5,11 +5,10 @@
 <p>{{ audition.production_user }}</p>
 <p>{{ audition.tag }}</p>
 
-<a href="/builder/part">Add Parts</a>
+<a href="builder/parts/{{ audition.id }}">Add Parts</a>
 
 <div ng-repeat="part in audition.parts">
     {{ part.name }}
-
 </div>
 
 

@@ -12,13 +12,20 @@
         {% block header %}
 	<a href="{% url 'index' %}">{% trans "Home" %}</a> |
     <a href="{% url 'audition' %}">{% trans "Auditions" %}</a> |
-    <a href="{% url 'index' %}">{% trans "About" %}</a> |
+    <a href="{% url 'audition_builder' %}">{% trans "Create Audition" %}</a> |
+    <a href="{% url 'about' %}">{% trans "About" %}</a> |
     <a href="{% url 'index' %}">{% trans "Contact" %}</a>
 
     <div style="float: right">
 	{% if user.is_authenticated %}
-	{% trans "Logged in" %}: <a href="{% url 'profile_builder' %}">{{ user.username }}</a>
+	{% trans "Logged in" %}:
+        {% if user.is_actor %}
+            <a href="{% url 'profile_builder' %}">{{ user.username }}</a>
+        {% else %}
+            <a href="{% url 'production_profile_builder' %}">{{ user.username }}</a>
+        {% endif %}
 	(<a href="{% url 'logout' %}">{% trans "Log out" %}</a> |
+	<a href="audition/#/profile/{{user.id}}">{% trans "Profile" %}</a> |
 	<a href="{% url 'auth_password_change' %}">{% trans "Change password" %}</a>)
 	{% else %}
 	<a href="{% url 'login_page' %}">{% trans "Log in" %}</a>

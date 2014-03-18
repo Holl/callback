@@ -9,7 +9,10 @@ from django.db import models
 class MainUser(AbstractUser):
 
     def is_actor(self):
-        return self.actor.exists()
+        if self.actor.first_name:
+            return True
+        else:
+            return False
 
 
 # Tags, for matching actors and auditions

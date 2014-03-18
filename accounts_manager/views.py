@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.template import context
 from registration.models import User
 from accounts_manager.forms import SignupForm, LoginForm, ProfileForm, ProductionProfileForm
-from accounts_manager.models import MainUser, ActorProfile
+from accounts_manager.models import MainUser, ActorProfile, ProductionProfile
 
 
 def index(response):
@@ -49,28 +49,47 @@ def login_page(request):
 def profile_builder(request):
     if request.method == "POST":
         form = ProfileForm(request.POST)
-        if form.is_valid():
-            submission = form.save(commit=False)
-            usr = request.user
-            submission.user = usr
-            submission.save()
-            return redirect('/')
-    else:
+        try:
+            if form.is_valid():
+                submission = form.save(commit=False)
+                usr = request.user
+                submission.user = usr
+                submission.save()
+                return redirect('/')
+        except:
+            if form.is_valid():
+                form.save()
+                return redirect('/')
+    try:
+        profiler = ActorProfile.objects.get(user=request.user)
+        form = ProfileForm(instance=profiler)
+    except:
         form = ProfileForm
+
     dataums = {'form': form}
     return render(request, 'profile_builder.html', dataums)
 
 
 def production_profile_builder(request):
+
     if request.method == "POST":
-        form = ProductionProfileForm(request.POST)
-        if form.is_valid():
-            submission = form.save(commit=False)
-            usr = request.user
-            submission.user = usr
-            submission.save()
-            return redirect('/')
-    else:
+        form = ProductionProfileForm(request.POST, instance=profiler)
+        try:
+            if form.is_valid():
+                submission = form.save(commit=False)
+                usr = request.user
+                submission.user = usr
+                submission.save()
+                return redirect('/')
+        except:
+            if form.is_valid():
+                submission = form.save(commit=False)
+                submission.save()
+                return redirect('/')
+    try:
+        profiler = ProductionProfile.objects.get(user=request.user)
+        form = ProductionProfileForm(instance=profiler)
+    except:
         form = ProductionProfileForm
     dataums = {'form': form}
     return render(request, 'production_profile_builder.html', dataums)
@@ -83,3 +102,6 @@ def choice(response):
 def logout_user(request):
     logout(request)
     return redirect ('/')
+
+def about(request):
+    return render(request, 'about.html')
