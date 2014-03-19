@@ -3,14 +3,17 @@
     <google-map center="map.center" zoom="map.zoom">
             <marker ng-repeat="m in markers" coords="m"  ng-click="m.showWindow = true" >
                 <window show='hide'>
-                    {{ m.name }}
-                    {{ m.description }}
-                    {{ m.audition_date }}
-                    <div ng-repeat="p in m.parts">
-                        {{ p.name }}
-                        {{ p.gender }}
+                    <div class="window-styler" style="font-family: Verdana;">
+                        Name: {{ m.name }} <br>
+                        Description: {{ m.description }} <br>
+                        Date/Time: {{ m.audition_date }} <br>
+                        Parts:
+                        <div ng-repeat="p in m.parts">
+                            {{ p.name }}
+                            {{ p.gender }}
+                        </div>
+                        <a href="#/{{ m.id }}">More Info</a>
                     </div>
-                    <a href="#/{{ m.id }}">More Info</a>
 
                 </window>
             </marker>
@@ -26,4 +29,11 @@
         <button>Change to Table</button>
     </div>
 
+</div>
+
+<div class="table" ng-repeat="m in markers">
+   {{ m.name }}
+   {{ m.description }}
+   {{ m.audition_date }}
+    <a href="#/{{ m.id }}">More Info</a>
 </div>

@@ -27,66 +27,10 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 
 }
-
-#header {
+.landing-buttons {
   background-color: #232427;
-  position: relative;
-  margin-bottom: 100%;
-  margin-right: 5px;
-  margin-left: -20px;
-  margin-top: -10px;
-  color: whitesmoke;
-
-}
-
-.header-list {
-  width: 76%;
-  float:left;
-  padding-left: 20px;
-}
-
-.landing-buttons{
-  margin-right:auto;
+  margin-right: auto;
   margin-left: 49px;
   font-size: 23px;
-
-
-}
-
-
-
-a:link,a:visited
-{
-    display:block;
-    width:125px;
-    border: solid;
-    border-color: grey;
-    font-weight: bold;
-    color: whitesmoke;
-    background-color: #232427;
-    text-align:center;
-    padding:3px;
-    padding-top: 10px;
-    padding-bottom:10px;
-    text-decoration:none;
-    text-transform:uppercase;
-    font-family: 'Josefin Sans', sans-serif;
-}
-
-a:hover,a:active
-{
-background-color:grey;
-}
-
-ul
-{
-list-style-type:none;
-margin:0;
-padding:0;
-overflow:hidden;
-}
-
-li
-{
-float:left;
+  color: whitesmoke;
 }

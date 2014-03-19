@@ -41,7 +41,7 @@ class ProductionResource(ModelResource):
 class AuditionResource(ModelResource):
 
     actors = ToManyField('accounts_manager.api.resources.ActorResource', 'actor_user', null=True)
-    production = ToOneField('accounts_manager.api.resources.ProductionResource', 'production_user', null=True)
+    production = ToOneField('accounts_manager.api.resources.ProductionResource', 'production_user', full=True, null=True)
     parts = ToManyField('accounts_manager.api.resources.PartResource', 'parts', null=True, full=True)
 
 

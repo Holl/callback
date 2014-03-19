@@ -31,6 +31,7 @@ urlpatterns = patterns('',
 
     url(r'^$', 'accounts_manager.views.index', name='index'),
     url(r'signup/$', 'accounts_manager.views.signup', name='signup'),
+    url(r'news/$', 'accounts_manager.views.news', name='news'),
     url(r'login/$', 'accounts_manager.views.login_page', name='login_page'),
     url(r'profile/builder/actor/$', 'accounts_manager.views.profile_builder', name='profile_builder'),
     url(r'profile/builder/production/$', 'accounts_manager.views.production_profile_builder',

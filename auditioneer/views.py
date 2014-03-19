@@ -1,3 +1,5 @@
+import json
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from accounts_manager.models import ProductionProfile
 from auditioneer.forms import AuditionForm, PartForm
@@ -7,6 +9,7 @@ from auditioneer.models import Audition
 
 def angular(request):
     return render(request, 'angular.html')
+
 
 
 def audition_builder(request):
@@ -38,3 +41,12 @@ def part_builder(request, audition_id):
         form = PartForm
     dataums = {'form': form}
     return render(request, 'part_builder.html', dataums)
+
+
+def check_login(request):
+    if request.user.is_authenticated():
+        return HttpResponse(json.dumps({'result': {'logged': True}, 'user': request.user.username}),
+                        content_type="application/json")
+    else:
+        return HttpResponse(json.dumps({'result': {'logged': False}}),
+                        content_type="application/json")
