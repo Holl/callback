@@ -10,7 +10,7 @@ function AuditionCtrl($scope, $http, $routeParams) {
             $scope.audition = audition;
             console.log(audition);
 
-            console.log(audition.parts)
+            console.log(audition.parts);
 
 
         });

@@ -1,7 +1,17 @@
 {% extends "base.html" %}
 {% load i18n %}
+{%  load static %}
 
 {% block content %}
+<link rel="stylesheet" href='{% static "css/index.css"%}'>
 
-<h1>Welcome to CALLBACK</h1>
+<div class="landing_div">
+
+    <h1>CALLBACK</h1>
+    <ul >
+        <li class="landing-buttons"><a href="{% url 'login_page' %}">{% trans "Log in" %}</a></li>
+        <li class="landing-buttons"><a href="{% url 'signup' %}">{% trans "Sign Up" %}</a></li>
+    </ul>
+
+</div>
 {% endblock %}

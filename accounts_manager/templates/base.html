@@ -1,40 +1,52 @@
 {% load i18n %}
+{% load staticfiles %}
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
     <title>{% block title %}Callback{% endblock %}</title>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
     <div id="header">
-        {% block header %}
-	<a href="{% url 'index' %}">{% trans "Home" %}</a> |
-    <a href="{% url 'audition' %}">{% trans "Auditions" %}</a> |
-    <a href="{% url 'audition_builder' %}">{% trans "Create Audition" %}</a> |
-    <a href="{% url 'about' %}">{% trans "About" %}</a> |
-    <a href="{% url 'index' %}">{% trans "Contact" %}</a>
+    {% block header %}
 
-    <div style="float: right">
+    <div class="header-list">
+    <ul>
+    <li><a class="logo" href="{% url 'index' %}">{% trans "CALLBACK" %}</a></li>
+	<li><a href="{% url 'index' %}">{% trans "Home" %}</a></li>
+    <li><a href="{% url 'audition' %}">{% trans "Auditions" %}</a></li>
+    {% if user.producer %}
+    <li><a href="{% url 'audition_builder' %}">{% trans "Create Audition" %}</a></li>
+    {% endif %}
+    <li><a href="{% url 'about' %}">{% trans "About" %}</a></li>
+    <li><a href="{% url 'index' %}">{% trans "Contact" %}</a></li>
+    </ul>
+    </div>
+    <div class="login-list">
+    <ul class="login-ul">
 	{% if user.is_authenticated %}
 	{% trans "Logged in" %}:
 
 	    {% if user.is_actor %}
-            <a href="/audition/#/profile/{{user.actor.id}}">{{ user.username }}</a> (
-            <a href="{% url 'profile_builder' %}">{% trans "Edit Profile" %}</a>
+           <li> <a href="/audition/#/profile/{{user.actor.id}}">{{ user.username }}</a></li> (
+           <li> <a href="{% url 'profile_builder' %}">{% trans "Edit Profile" %}</a></li>
         {% else %}
-            <a href="/audition/#/{{user.producer.id}}">{{ user.username }}</a> (
-            <a href="{% url 'production_profile_builder' %}">{% trans "Edit Profile" %}</a>
+            <li><a href="/audition/#/{{user.producer.id}}">{{ user.username }}</a> </li>(
+            <li><a href="{% url 'production_profile_builder' %}">{% trans "Edit Profile" %}</a></li>
         {% endif %}
         |
-        <a href="{% url 'logout' %}">{% trans "Log out" %}</a> |
-	<a href="{% url 'auth_password_change' %}">{% trans "Change password" %}</a>)
+       <li> <a href="{% url 'logout' %}">{% trans "Log out" %}</a></li> |
+	<li><a href="{% url 'auth_password_change' %}">{% trans "Change password" %}</a></li>)
 	{% else %}
-	<a href="{% url 'login_page' %}">{% trans "Log in" %}</a>
+	<li><a href="{% url 'login_page' %}">{% trans "Log in" %}</a></li>
+	<li><a href="{% url 'signup' %}">{% trans "Sign Up" %}</a></li>
 	{% endif %}
+    </ul>
     </div>
-	<hr />
+
         {% endblock %}
     </div>
 
@@ -44,8 +56,8 @@
 
     <div id="footer">
         {% block footer %}
-        <hr />
-           <p>By: Holl</p>
+
+
         {% endblock %}
     </div>
 </body>

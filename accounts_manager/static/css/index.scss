@@ -1,0 +1,92 @@
+body {
+  background-image: url('http://i.imgur.com/BovdpYL.jpg');
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+
+.landing_div {
+  color: whitesmoke;
+  bottom: 0;
+  height: 200px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 460px;
+  font-size: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 20px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+#header {
+  background-color: #232427;
+  position: relative;
+  margin-bottom: 100%;
+  margin-right: 5px;
+  margin-left: -20px;
+  margin-top: -10px;
+  color: whitesmoke;
+
+}
+
+.header-list {
+  width: 76%;
+  float:left;
+  padding-left: 20px;
+}
+
+.landing-buttons{
+  margin-right:auto;
+  margin-left: 49px;
+  font-size: 23px;
+
+
+}
+
+
+
+a:link,a:visited
+{
+    display:block;
+    width:125px;
+    border: solid;
+    border-color: grey;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #232427;
+    text-align:center;
+    padding:3px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a:hover,a:active
+{
+background-color:grey;
+}
+
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+}
+
+li
+{
+float:left;
+}
