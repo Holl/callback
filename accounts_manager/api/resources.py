@@ -1,4 +1,6 @@
 from django.conf import settings
+from tastypie import fields
+from tastypie.authentication import MultiAuthentication, BasicAuthentication, Authentication
 from tastypie.authorization import Authorization
 from tastypie.bundle import Bundle
 from tastypie.fields import ToManyField, CharField, ToOneField
@@ -38,17 +40,31 @@ class ProductionResource(ModelResource):
         resource_name = "production_profile"
         authorization = Authorization()
 
+
+
 class AuditionResource(ModelResource):
 
     actors = ToManyField('accounts_manager.api.resources.ActorResource', 'actor_user', null=True)
     production = ToOneField('accounts_manager.api.resources.ProductionResource', 'production_user', full=True, null=True)
     parts = ToManyField('accounts_manager.api.resources.PartResource', 'parts', null=True, full=True)
-
+    is_the_producer = fields.BooleanField()
 
     class Meta:
         queryset = Audition.objects.all()
         resource_name = "audition"
         authorization = Authorization()
+        authentication = MultiAuthentication(BasicAuthentication(), Authentication())
+
+    def dehydrate_is_the_producer(self, bundle):
+
+        if bundle.request.user.is_anonymous() or not bundle.request.user.is_authenticated():
+            return False
+        try:
+            producer = bundle.request.user.producer
+        except ProductionProfile.DoesNotExist:
+            return False
+        return bundle.obj.production_user == bundle.request.user.producer
+
 
 class PartResource(ModelResource):
 

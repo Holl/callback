@@ -5,11 +5,13 @@
 <p>{{ audition.production_user }}</p>
 <p>{{ audition.tag }}</p>
 
-<a ng-Show="" class="ng-Hide" href="builder/parts/{{ audition.id }}">Test</a>
+<a ng-Show="audition.is_the_producer" href="builder/parts/{{ audition.id }}">Add Part</a>
 
 <div ng-repeat="part in audition.parts">
     {{ part.name }}
 </div>
+
+<button id="applyButton">Apply for Audition</button>
 
 
 
