@@ -1,5 +1,5 @@
 #header  {
-  background-color: #232427;
+//  background-color: #232427;
   position: absolute;
   top: 0;
   color: whitesmoke;
@@ -8,10 +8,12 @@
 
 .header-list {
   float: left;
-  padding-left: 0px; }
+  padding-left: 0px;
+  background-color: #232427}
 
 .login-ul {
-  float: right; }
+  float: right;
+  background-color: #232427;}
 
 #header a:link, #header a:visited, .landing-buttons a:link, .landing-buttons a:visited {
   display: block;
@@ -43,4 +45,23 @@ li {
 
 html, body {
     margin-top: 25px;
+}
+
+.profileButton {
+  background-color: #C21000;
+  width: 200px;
+}
+
+#header ul ul {
+    float: none;
+	display: none;
+}
+
+#header ul ul li {
+      float: none;
+}
+
+#header ul li:hover > ul {
+    float: none;
+    display: block;
 }

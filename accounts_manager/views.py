@@ -55,6 +55,7 @@ def profile_builder(request):
                 submission = form.save(commit=False)
                 usr = request.user
                 submission.user = usr
+                submission.headshot = request.FILES['id_headshot']
                 submission.save()
                 return redirect('/')
         except:

@@ -31,15 +31,25 @@
 	{% if user.is_authenticated %}
 
 	    {% if user.is_actor %}
-           <li> <a href="/audition/#/profile/{{user.actor.id}}">{{ user.username }}</a></li>
-           <li> <a href="{% url 'profile_builder' %}">{% trans "Edit Profile" %}</a></li>
+           <li> <a class="profileButton" href="/audition/#/profile/{{user.actor.id}}">{{ user.username }}</a>
+               <ul>
+                    <li> <a href="/audition/#/profile/{{user.actor.id}}">Profile</a>
+                    <li> <a href="{% url 'profile_builder' %}">{% trans "Edit Profile" %}</a></li>
+                    <li> <a href="{% url 'logout' %}">{% trans "Log out" %}</a></li>
+	                <li><a href="{% url 'auth_password_change' %}">{% trans "Change password" %}</a></li>
+               </ul>
+           </li>
         {% else %}
-            <li><a href="/audition/#/{{user.producer.id}}">{{ user.username }}</a> </li>
-            <li><a href="{% url 'production_profile_builder' %}">{% trans "Edit Profile" %}</a></li>
+            <li><a class="profileButton" href="/audition/#/{{user.producer.id}}">{{ user.username }}</a>
+                <ul>
+                    <li><a href="{% url 'production_profile_builder' %}">{% trans "Edit Profile" %}</a></li>
+                    <li> <a href="{% url 'profile_builder' %}">{% trans "Edit Profile" %}</a></li>
+                    <li> <a href="{% url 'logout' %}">{% trans "Log out" %}</a></li>
+	                <li><a href="{% url 'auth_password_change' %}">{% trans "Change password" %}</a></li>
+                </ul>
+            </li>
         {% endif %}
 
-       <li> <a href="{% url 'logout' %}">{% trans "Log out" %}</a></li>
-	<li><a href="{% url 'auth_password_change' %}">{% trans "Change password" %}</a></li>
 	{% else %}
 	<li><a href="{% url 'login_page' %}">{% trans "Log in" %}</a></li>
 	<li><a href="{% url 'signup' %}">{% trans "Sign Up" %}</a></li>
