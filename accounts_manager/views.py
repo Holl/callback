@@ -49,18 +49,20 @@ def login_page(request):
 def profile_builder(request):
     if request.method == "POST":
         profiler = ActorProfile.objects.get(user=request.user)
-        form = ProfileForm(request.POST, instance=profiler)
+        form = ProfileForm(request.POST, request.FILES, instance=profiler)
         try:
             if form.is_valid():
                 submission = form.save(commit=False)
                 usr = request.user
                 submission.user = usr
-                submission.headshot = request.FILES['id_headshot']
+                submission.headshot = request.FILES['headshot']
                 submission.save()
                 return redirect('/')
         except:
             if form.is_valid():
-                form.save()
+                submission = form.save(commit=False)
+                submission.headshot = request.FILES['headshot']
+                submission.save()
                 return redirect('/')
     try:
         profiler = ActorProfile.objects.get(user=request.user)

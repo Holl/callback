@@ -1,9 +1,11 @@
+from django.conf import settings
 from django.conf.urls import patterns, include, url
 from django.contrib.auth import views as auth_views
 from django.contrib import admin
 from tastypie.api import Api
 from accounts_manager.api.resources import ActorResource, TagResource, ProductionResource, AuditionResource, \
     PartResource
+from django.conf.urls.static import static
 
 admin.autodiscover()
 
@@ -23,7 +25,7 @@ v1_api.register(PartResource())
 
 urlpatterns = patterns('',
 
-
+    url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 
     url(r'^admin/', include(admin.site.urls)),
 
@@ -63,7 +65,12 @@ urlpatterns = patterns('',
         auth_views.password_reset_confirm,
         name='password_reset_confirm'),
 
+
     url(r'^api/', include(v1_api.urls)),
 
     url(r'accounts/', include('registration.backends.default.urls')),
+
+
 )
+
+# + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

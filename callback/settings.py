@@ -85,7 +85,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-ACCOUNT_ACTIVATION_DAYS=7
+ACCOUNT_ACTIVATION_DAYS = 7
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
@@ -97,3 +97,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 EMAIL_FILE_PATH = 'emails/'
 
 AUTH_USER_MODEL = 'accounts_manager.MainUser'
+
+MEDIA_ROOT = "/Users/kevinholloway/Desktop/main_projects/callback/media/"
+
