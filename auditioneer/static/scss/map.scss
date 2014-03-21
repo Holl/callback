@@ -1,7 +1,26 @@
-.angular-google-map-container { height: 400px }
+.angular-google-map-container {
+  height: 560px;
+  width: 100%;
+}
+
+.table {
+  float: right;
+  width: 40%;
+  font-family: Verdana;
+}
+
+.cell {
+  border-bottom: blanchedalmond double;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
 
 .wrapper {
-  position: relative;
+  position: fixed;
+  width: 58%;
+  display: inline-block;
+
 }
 
 #map-canvas {
@@ -11,7 +30,7 @@
 
 .wrapper_create {
   height: 200px;
-  width: 400px;
+  width: 200px;
 }
 
 .create_form {
@@ -32,4 +51,17 @@
   div {
     color:white;
   }
+}
+
+.actor-name {
+  text-align: center;
+  font-family: Verdana;
+}
+
+.actor-headshot, .actor-highlight_reel {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40%;
+  width: 40%;
 }

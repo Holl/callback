@@ -1,3 +1,5 @@
+
+
 <div class="wrapper">
 
     <google-map center="map.center" zoom="map.zoom">
@@ -24,10 +26,11 @@
 
 
 </div>
-
-<div class="table" ng-repeat="m in markers">
-   {{ m.name }}
-   {{ m.description }}
-   {{ m.audition_date }}
-    <a href="#/{{ m.id }}">More Info</a>
+<div class="table">
+    <div class="cell" ng-repeat="m in markers">
+       <h3>{{ m.name }}</h3>
+       <h4>{{ m.audition_date }}</h4>
+       <p>{{ m.description }}</p>
+        <a href="#/{{ m.id }}">More Info</a>
+    </div>
 </div>

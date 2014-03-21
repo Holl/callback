@@ -1,10 +1,11 @@
 #header  {
 //  background-color: #232427;
-  position: absolute;
+  position: fixed;
   top: 0;
   color: whitesmoke;
   width: 100%;
-  left: 0; }
+  left: 0;
+}
 
 .header-list {
   float: left;
@@ -45,6 +46,7 @@ li {
 
 html, body {
     margin-top: 25px;
+  background-color: aliceblue;
 }
 
 .profileButton {

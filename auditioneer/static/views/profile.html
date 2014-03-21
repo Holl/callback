@@ -1,7 +1,9 @@
+<h1 class="actor-name"> {{ actor.first_name }} {{ actor.last_name }}</h1>
+<img class="actor-headshot" src='{{ MEDIA_URL }}{{ actor.headshot }}'>
 
+<video width="320" height="240" src="{{ HighlightVideo }}" controls>
+</video>
 
-<h1> {{ actor.first_name }} {{ actor.last_name }}</h1>
-<img src='{{ media_url }}{{ actor.headshot }}'>
 <p> {{ actor.bio }}</p>
 <p>{{ actor.phone }}</p>
 <p>{{ actor.gender }}</p>

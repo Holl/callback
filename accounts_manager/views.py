@@ -18,10 +18,10 @@ def signup(request):
                 form.cleaned_data["username"],
                 form.cleaned_data["email"],
                 form.cleaned_data["password"],
-                )
-            username=form.cleaned_data["username"]
-            password=form.cleaned_data["password"]
-            login_user=authenticate(username=username, password=password)
+            )
+            username = form.cleaned_data["username"]
+            password = form.cleaned_data["password"]
+            login_user = authenticate(username=username, password=password)
             login(request, login_user)
             return redirect('choice/')
     else:
@@ -46,20 +46,24 @@ def login_page(request):
     dataum = {'form': form}
     return render(request, 'login.html', dataum)
 
+
 def profile_builder(request):
     if request.method == "POST":
-        profiler = ActorProfile.objects.get(user=request.user)
-        form = ProfileForm(request.POST, request.FILES, instance=profiler)
+        form = ProfileForm(request.POST, request.FILES)
         try:
             if form.is_valid():
                 submission = form.save(commit=False)
                 usr = request.user
                 submission.user = usr
                 submission.headshot = request.FILES['headshot']
+                submission.highlight_reel = request.FILES['highlight_reel']
                 submission.save()
                 return redirect('/')
+
         except:
             if form.is_valid():
+                profiler = ActorProfile.objects.get(user=request.user)
+                form = ProfileForm(request.POST, request.FILES, instance=profiler)
                 submission = form.save(commit=False)
                 submission.headshot = request.FILES['headshot']
                 submission.save()
@@ -75,7 +79,6 @@ def profile_builder(request):
 
 
 def production_profile_builder(request):
-
     if request.method == "POST":
         profiler = ProductionProfileForm.objects.get(user=request.user)
         form = ProductionProfileForm(request.POST, instance=profiler)
@@ -106,10 +109,12 @@ def choice(response):
 
 def logout_user(request):
     logout(request)
-    return redirect ('/')
+    return redirect('/')
+
 
 def about(request):
     return render(request, 'about.html')
+
 
 def news(request):
     return render(request, 'news.html')

@@ -4,10 +4,10 @@
 function MapCtrl($scope, $http) {
             $scope.map = {
                 center: {
-                    latitude: 41,
-                    longitude: -73.75
+                    latitude: 40.74,
+                    longitude: -73.95
                 },
-                zoom: 9
+                zoom: 11
             };
 
     $http.get('/api/v1/audition/?format=json').

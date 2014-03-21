@@ -1,5 +1,5 @@
 #header {
-  position: absolute;
+  position: fixed;
   top: 0;
   color: whitesmoke;
   width: 100%;
@@ -43,7 +43,8 @@ li {
   float: left; }
 
 html, body {
-  margin-top: 25px; }
+  margin-top: 25px;
+  background-color: aliceblue; }
 
 .profileButton {
   background-color: #C21000;
