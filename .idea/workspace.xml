@@ -23,37 +23,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="profile.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auditioneer/static/views/profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="23" selection-start="248" selection-end="248" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="270">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auditioneer/static/views/create.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="615">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="base.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accounts_manager/static/css/base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="30" selection-start="964" selection-end="964" vertical-scroll-proportion="-30.0" vertical-offset="0" max-vertical-offset="1110">
+            <state line="82" column="21" selection-start="1395" selection-end="1395" vertical-scroll-proportion="-9.38" vertical-offset="761" max-vertical-offset="1365">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapCtrl.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/auditioneer/static/js/controllers/MapCtrl.js">
+      <file leaf-file-name="index.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts_manager/static/css/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="35" selection-start="161" selection-end="161" vertical-scroll-proportion="0.13761468" vertical-offset="0" max-vertical-offset="654">
+            <state line="32" column="17" selection-start="597" selection-end="597" vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="630">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="audition-map.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auditioneer/static/scss/audition-map.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts_manager/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="34" selection-start="1203" selection-end="1233" vertical-scroll-proportion="1.98" vertical-offset="564" max-vertical-offset="1275">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts_manager/static/css/base.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="1125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts_manager/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="12" selection-start="457" selection-end="457" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="375">
               <folding />
             </state>
           </provider>
@@ -62,43 +80,18 @@
       <file leaf-file-name="map.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/auditioneer/static/scss/map.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="2" selection-start="266" selection-end="282" vertical-scroll-proportion="-5.7" vertical-offset="0" max-vertical-offset="1080">
-              <folding />
+            <state line="20" column="63" selection-start="365" selection-end="365" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="1350">
+              <folding>
+                <marker date="1395445538000" expanded="true" signature="342:356" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuditionCtrl.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auditioneer/static/js/controllers/AuditionCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="22" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auditioneer/static/js/map.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="31" selection-start="496" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="990">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="audition.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/auditioneer/static/views/audition.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="8" selection-start="301" selection-end="301" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="345">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="map.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/auditioneer/static/views/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="615">
+            <state line="6" column="63" selection-start="248" selection-end="248" vertical-scroll-proportion="0.14285715" vertical-offset="0" max-vertical-offset="840">
               <folding>
                 <element signature="n#style#0;n#div#0;n#window#0;n#marker#0;n#google-map#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -106,10 +99,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts_manager/templates/base.html">
+      <file leaf-file-name="angular.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auditioneer/templates/angular.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="4" selection-start="407" selection-end="464" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="1215">
+            <state line="34" column="94" selection-start="1485" selection-end="1485" vertical-scroll-proportion="-16.875" vertical-offset="105" max-vertical-offset="1560">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="part_builder.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/auditioneer/templates/part_builder.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="14" selection-start="239" selection-end="239" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
@@ -146,16 +148,12 @@
         <option value="$PROJECT_DIR$/accounts_manager/static/css/index.css" />
         <option value="$PROJECT_DIR$/accounts_manager/templates/choice.html" />
         <option value="$PROJECT_DIR$/accounts_manager/templates/news.html" />
-        <option value="$PROJECT_DIR$/accounts_manager/templates/index.html" />
         <option value="$PROJECT_DIR$/auditioneer/views.py" />
         <option value="$PROJECT_DIR$/accounts_manager/api/resources.py" />
         <option value="$PROJECT_DIR$/auditioneer/static/views/audition.html" />
         <option value="$PROJECT_DIR$/auditioneer/static/js/controllers/AuditionCtrl.js" />
-        <option value="$PROJECT_DIR$/accounts_manager/static/css/index.scss" />
-        <option value="$PROJECT_DIR$/accounts_manager/templates/base.html" />
         <option value="$PROJECT_DIR$/accounts_manager/templates/profile_builder.html" />
         <option value="$PROJECT_DIR$/accounts_manager/models.py" />
-        <option value="$PROJECT_DIR$/auditioneer/templates/angular.html" />
         <option value="$PROJECT_DIR$/callback/settings.py" />
         <option value="$PROJECT_DIR$/auditioneer/static/scss/map.css" />
         <option value="$PROJECT_DIR$/auditioneer/static/scss/profile.scss" />
@@ -164,10 +162,14 @@
         <option value="$PROJECT_DIR$/auditioneer/static/js/controllers/ProfileCtrl.js" />
         <option value="$PROJECT_DIR$/auditioneer/static/views/profile.html" />
         <option value="$PROJECT_DIR$/auditioneer/static/scss/audition-map.scss" />
-        <option value="$PROJECT_DIR$/auditioneer/static/views/map.html" />
-        <option value="$PROJECT_DIR$/auditioneer/static/scss/map.scss" />
-        <option value="$PROJECT_DIR$/accounts_manager/static/css/base.scss" />
         <option value="$PROJECT_DIR$/auditioneer/static/js/controllers/MapCtrl.js" />
+        <option value="$PROJECT_DIR$/accounts_manager/static/css/index.scss" />
+        <option value="$PROJECT_DIR$/auditioneer/templates/angular.html" />
+        <option value="$PROJECT_DIR$/accounts_manager/static/css/base.scss" />
+        <option value="$PROJECT_DIR$/auditioneer/static/scss/map.scss" />
+        <option value="$PROJECT_DIR$/accounts_manager/templates/base.html" />
+        <option value="$PROJECT_DIR$/accounts_manager/templates/index.html" />
+        <option value="$PROJECT_DIR$/auditioneer/static/views/map.html" />
       </list>
     </option>
   </component>
@@ -749,7 +751,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="callback" />
       <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8001" />
+      <option name="port" value="8000" />
       <option name="host" value="" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="http://127.0.0.1:8000/" />
@@ -800,7 +802,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2515625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2515625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -834,18 +836,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/auditioneer/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auditioneer/templates/part_builder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14" selection-start="239" selection-end="239" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/callback/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="422" />
@@ -893,7 +883,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts_manager/static/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="525" />
+        <state line="29" column="0" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="525">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts_manager/migrations/0001_initial.py">
@@ -950,13 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="14" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="345">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accounts_manager/api/resources.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="0" selection-start="2273" selection-end="2273" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1680" />
@@ -965,11 +950,6 @@
     <entry file="file://$PROJECT_DIR$/accounts_manager/api/authorization.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/static/css/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="121" selection-end="121" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="630" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts_manager/templates/profile_builder.html">
@@ -1050,37 +1030,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auditioneer/static/js/controllers/ProfileCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="82" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auditioneer/templates/audition_builder.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="716" selection-end="716" vertical-scroll-proportion="-13.666667" vertical-offset="122" max-vertical-offset="600">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auditioneer/templates/angular.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="51" selection-start="1442" selection-end="1442" vertical-scroll-proportion="-16.875" vertical-offset="105" max-vertical-offset="1515">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auditioneer/static/scss/profile.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auditioneer/static/scss/audition-map.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="491">
           <folding />
         </state>
       </provider>
@@ -1099,13 +1051,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auditioneer/static/views/audition.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="8" selection-start="301" selection-end="301" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="345">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/auditioneer/static/views/create.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="615">
@@ -1113,9 +1058,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts_manager/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/auditioneer/static/js/controllers/ProfileCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="4" selection-start="407" selection-end="464" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="1215">
+        <state line="10" column="82" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auditioneer/static/js/controllers/MapCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="1" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auditioneer/static/scss/profile.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="90">
           <folding />
         </state>
       </provider>
@@ -1127,33 +1086,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auditioneer/static/views/map.html">
+    <entry file="file://$PROJECT_DIR$/auditioneer/static/views/audition.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#window#0;n#marker#0;n#google-map#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="9" column="8" selection-start="301" selection-end="301" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="345">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auditioneer/static/scss/map.scss">
+    <entry file="file://$PROJECT_DIR$/auditioneer/templates/angular.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="2" selection-start="266" selection-end="282" vertical-scroll-proportion="-5.7" vertical-offset="0" max-vertical-offset="1080">
+        <state line="34" column="94" selection-start="1485" selection-end="1485" vertical-scroll-proportion="-16.875" vertical-offset="105" max-vertical-offset="1560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auditioneer/templates/part_builder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="14" selection-start="239" selection-end="239" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/static/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" vertical-offset="441" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auditioneer/static/scss/audition-map.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="491">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="34" selection-start="1203" selection-end="1233" vertical-scroll-proportion="1.98" vertical-offset="564" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts_manager/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="12" selection-start="457" selection-end="457" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts_manager/static/css/base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="30" selection-start="964" selection-end="964" vertical-scroll-proportion="-30.0" vertical-offset="0" max-vertical-offset="1110">
+        <state line="82" column="21" selection-start="1395" selection-end="1395" vertical-scroll-proportion="-9.38" vertical-offset="761" max-vertical-offset="1365">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/auditioneer/static/js/controllers/MapCtrl.js">
+    <entry file="file://$PROJECT_DIR$/accounts_manager/static/css/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="35" selection-start="161" selection-end="161" vertical-scroll-proportion="0.13761468" vertical-offset="0" max-vertical-offset="654">
+        <state line="32" column="17" selection-start="597" selection-end="597" vertical-scroll-proportion="-20.0" vertical-offset="0" max-vertical-offset="630">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auditioneer/static/scss/map.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="63" selection-start="365" selection-end="365" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="1350">
+          <folding>
+            <marker date="1395445538000" expanded="true" signature="342:356" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auditioneer/static/views/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="63" selection-start="248" selection-end="248" vertical-scroll-proportion="0.14285715" vertical-offset="0" max-vertical-offset="840">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#window#0;n#marker#0;n#google-map#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

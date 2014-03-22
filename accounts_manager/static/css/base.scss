@@ -1,10 +1,15 @@
 #header  {
-//  background-color: #232427;
+//  background-color: #232411;
   position: fixed;
   top: 0;
   color: whitesmoke;
   width: 100%;
   left: 0;
+}
+
+.headerCover {
+  background-color: #232427;
+  height: 36px;
 }
 
 .header-list {
@@ -18,8 +23,8 @@
 
 #header a:link, #header a:visited, .landing-buttons a:link, .landing-buttons a:visited {
   display: block;
-  border: solid;
-  border-color: grey;
+//  border: solid;
+//  border-color: grey;
   font-weight: bold;
   color: whitesmoke;
   text-align: center;
@@ -30,7 +35,9 @@
   padding-right: 10px;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: 'Josefin Sans', sans-serif; }
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #232427;
+}
 
 #header a:hover, #header a:active, .landing-buttons a:hover, .landing-buttons a:active  {
   background-color: grey; }
@@ -46,24 +53,33 @@ li {
 
 html, body {
     margin-top: 25px;
-  background-color: aliceblue;
+  font-family: Asap;
+//    background-color: steelblue;
 }
 
 .profileButton {
-  background-color: #C21000;
+  background-color: #C21000 !important;
   width: 200px;
 }
 
 #header ul ul {
     float: none;
 	display: none;
+
 }
 
 #header ul ul li {
       float: none;
+      overflow: visible;
+
 }
 
-#header ul li:hover > ul {
+#header ul   li:hover > ul {
     float: none;
     display: block;
 }
+
+.audition-buttons {
+  position: absolute;
+}
+

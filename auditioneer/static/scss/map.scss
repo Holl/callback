@@ -6,15 +6,29 @@
 .table {
   float: right;
   width: 40%;
-  font-family: Verdana;
+  font-family: Asap;
 }
 
 .cell {
-  border-bottom: blanchedalmond double;
+  border-bottom: #C21000 double;
   margin-bottom: 10px;
   padding-bottom: 10px;
   text-align: center;
+  ul {
+    text-align: center;
+    list-style: none;
+    li {
+      position: relative; float: left; display: block; left: 37%;
+      padding: 10px 5px 10px 5px;
+      a{
+        text-align: center;
+
+      }
+  }
 }
+}
+
+
 
 .wrapper {
   position: fixed;
@@ -55,7 +69,7 @@
 
 .actor-name {
   text-align: center;
-  font-family: Verdana;
+  font-family: Asap;
 }
 
 .actor-headshot, .actor-highlight_reel {
@@ -64,4 +78,8 @@
   margin-right: auto;
   height: 40%;
   width: 40%;
+}
+
+div {
+  font-family: Asap;
 }

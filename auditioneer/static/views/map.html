@@ -2,10 +2,10 @@
 
 <div class="wrapper">
 
-    <google-map center="map.center" zoom="map.zoom">
+    <google-map center="map.center" zoom="map.zoom" draggable="true">
             <marker ng-repeat="m in markers" coords="m"  ng-click="m.showWindow = true" >
-                <window show='hide'>
-                    <div class="window-styler" style="font-family: Verdana;">
+                <window show='hide' isIconVisibleOnClick='false'>
+                    <div class="window-styler" style="font-family: Asap;">
                         Name: {{ m.name }} <br>
                         Description: {{ m.description }} <br>
                         Date/Time: {{ m.audition_date }} <br>
@@ -14,7 +14,11 @@
                             {{ p.name }}
                             {{ p.gender }}
                         </div>
-                        <a href="#/{{ m.id }}">More Info</a>
+                        <ul>
+                            <li class="landing-buttons audition-buttons">
+                                <a  href="#/{{ m.id }}">More Info</a>
+                            </li>
+                        </ul>
                     </div>
 
                 </window>
@@ -31,6 +35,17 @@
        <h3>{{ m.name }}</h3>
        <h4>{{ m.audition_date }}</h4>
        <p>{{ m.description }}</p>
-        <a href="#/{{ m.id }}">More Info</a>
+        <p>Parts: {{ m.parts.length }}</p>
+        <div ng-repeat="p in m.parts">
+        {{ p.name }}
+        {{ p.gender }}
+        </div>
+        <br>
+        <ul>
+            <li class="landing-buttons">
+                <a  href="#/{{ m.id }}">More Info</a>
+            </li>
+        </ul>
+
     </div>
 </div>
