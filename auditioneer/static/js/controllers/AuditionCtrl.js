@@ -11,24 +11,16 @@ function AuditionCtrl($scope, $http, $routeParams) {
         success(function(audition){
             $scope.audition = audition;
             console.log(audition);
+            $scope.user = username;
 
             console.log(audition.parts);
 
-            $('#applyButton').click(function()
-            {
-                audition.actor.append(username);
-                console.log("Apply Button Clicked!");
+                $('.apply-buttons').click(function(){
 
-                console.log("going out:");
-                console.log(audition);
 
-                $http.post('/api/v1/audition/'+id+'/?format=json', audition).
-                    success(function(audition){
-                        $location.path('/')
-
-                    })
+                })
             });
-        });
+
 
 
 

@@ -7,11 +7,25 @@
 
 <a ng-Show="audition.is_the_producer" href="builder/parts/{{ audition.id }}">Add Part</a>
 
-<div ng-repeat="part in audition.parts">
-    {{ part.name }}
+<p>Actors who've applied:</p>
+<ul ng-Show="audition.is_the_producer" ng-Repeat="actor in audition.actors">
+    <li><a href="/audition/#/profile/{{ actor.id }}">{{ actor.first_name }} {{ actor.last_name }}</a></li>
+</ul>
+
+<p>Parts Available:</p>
+<div class="applicants" ng-Show="audition.is_the_producer">
+
 </div>
 
-<button id="applyButton">Apply for Audition</button>
+        <ul  ng-repeat="part in audition.parts">
+            <li>{{ part.name }}
+                <ul>
+                    <li>{{ part.description }}</li>
+                </ul>
+            </li>
+        </ul>
+
+<a href="/signup/audition/{{ audition.id }}/" class="apply-buttons">Sign Up</a>
 
 
 

@@ -14,11 +14,13 @@
   margin-bottom: 10px;
   padding-bottom: 10px;
   text-align: center;
+  padding-left: 0px;
   ul {
     text-align: center;
     list-style: none;
+    padding-left: 0px;
     li {
-      position: relative; float: left; display: block; left: 37%;
+      display: block; left: 37%;
       padding: 10px 5px 10px 5px;
       a{
         text-align: center;

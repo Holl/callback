@@ -9,12 +9,11 @@ body {
   color: whitesmoke;
   bottom: 0;
   height: 200px;
-  left: 0;
+  left: 400px;
   margin: auto;
   position: absolute;
   top: 0;
   right: 0;
-  width: 460px;
   font-size: 40px;
   padding-right: 20px;
   padding-left: 20px;
@@ -27,10 +26,16 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 
 }
-.landing-buttons {
+.landing-buttons, .audition-buttons {
   background-color: #232427;
   margin-right: auto;
-  margin-left: 67px;
+  margin-left: 40px;
   font-size: 23px;
   color: whitesmoke;
 }
+
+ul .landing-buttons {
+  list-style-type: none;
+  overflow: hidden;
+}
+

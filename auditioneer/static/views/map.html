@@ -10,12 +10,13 @@
                         Description: {{ m.description }} <br>
                         Date/Time: {{ m.audition_date }} <br>
                         Parts:
+                        <!-- Inline style inc, don't kill me code gods -->
                         <div ng-repeat="p in m.parts">
                             {{ p.name }}
                             {{ p.gender }}
                         </div>
-                        <ul>
-                            <li class="landing-buttons audition-buttons">
+                        <ul style="list-style: none;">
+                            <li class="audition-buttons">
                                 <a  href="#/{{ m.id }}">More Info</a>
                             </li>
                         </ul>
@@ -42,7 +43,7 @@
         </div>
         <br>
         <ul>
-            <li class="landing-buttons">
+            <li class="audition-buttons">
                 <a  href="#/{{ m.id }}">More Info</a>
             </li>
         </ul>

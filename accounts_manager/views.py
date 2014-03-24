@@ -4,6 +4,7 @@ from django.template import context
 from registration.models import User
 from accounts_manager.forms import SignupForm, LoginForm, ProfileForm, ProductionProfileForm
 from accounts_manager.models import MainUser, ActorProfile, ProductionProfile
+from auditioneer.models import Audition
 
 
 def index(response):
@@ -118,3 +119,12 @@ def about(request):
 
 def news(request):
     return render(request, 'news.html')
+
+
+def audition_signup(request, id):
+    profiler = ActorProfile.objects.get(user=request.user)
+    auditioner = Audition.objects.get(id=id)
+
+    auditioner.actor_user.add(profiler)
+
+    return render(request, 'AuditionSignup.html')

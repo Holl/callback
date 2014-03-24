@@ -18,8 +18,8 @@
   float: right;
   background-color: #232427; }
 
-#header a:link, #header a:visited, .landing-buttons a:link, .landing-buttons a:visited {
-  display: block;
+#header a:link, #header a:visited, .landing-buttons a:link, .landing-buttons a:visited, .audition-buttons a:link, .audition-buttons a:visited,
+.apply-buttons a:link, .apply-buttons a:visited {
   font-weight: bold;
   color: whitesmoke;
   text-align: center;
@@ -33,16 +33,20 @@
   font-family: 'Josefin Sans', sans-serif;
   background-color: #232427; }
 
-#header a:hover, #header a:active, .landing-buttons a:hover, .landing-buttons a:active {
+#header a:link, #header a:visited, .landing-buttons a:link, .landing-buttons a:visited {
+  display: block; }
+
+#header a:hover, #header a:active, .landing-buttons a:hover, .landing-buttons a:active, .audition-buttons a:hover,
+.apply-buttons a:hover {
   background-color: grey; }
 
-ul {
+#header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden; }
 
-li {
+#header li, ul .landing-buttons {
   float: left; }
 
 html, body {
@@ -65,5 +69,43 @@ html, body {
   float: none;
   display: block; }
 
-.audition-buttons {
-  position: absolute; }
+.apply-buttons {
+  background-color: #f24537;
+  -webkit-border-top-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  border-top-left-radius: 0px;
+  -webkit-border-top-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-bottom-left-radius: 0px;
+  text-indent: 1.16px;
+  display: inline-block;
+  color: #ffffff;
+  font-family: Times New Roman;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  height: 65px;
+  line-height: 65px;
+  width: 116px;
+  text-decoration: none;
+  text-align: center; }
+
+.apply-buttons:hover {
+  background-color: #c62d1f; }
+
+.apply-buttons:active {
+  position: relative;
+  top: 1px; }
+
+#map-canvas {
+  height: 500px;
+  width: 48%;
+  float: right;
+  position: fi;
+  margin-bottom: 400px; }

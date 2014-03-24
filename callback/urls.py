@@ -4,12 +4,13 @@ from django.contrib.auth import views as auth_views
 from django.contrib import admin
 from tastypie.api import Api
 from accounts_manager.api.resources import ActorResource, TagResource, ProductionResource, AuditionResource, \
-    PartResource
+    PartResource, MainUserResource
 
 admin.autodiscover()
 
 v1_api = Api(api_name="v1")
 v1_api.register(ActorResource())
+v1_api.register(MainUserResource())
 v1_api.register(TagResource())
 v1_api.register(ProductionResource())
 v1_api.register(AuditionResource())
@@ -21,6 +22,10 @@ urlpatterns = patterns('',
                            {'document_root': settings.MEDIA_ROOT}),
 
                        url(r'^admin/', include(admin.site.urls)),
+
+
+                       url('signup/audition/(\d+)/', 'accounts_manager.views.audition_signup', name='audition_signup'),
+
 
 
                        url(r'^$', 'accounts_manager.views.index', name='index'),

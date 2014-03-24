@@ -13,7 +13,7 @@
 <script type="text/javascript" src="{% static 'js/vendor/jquery.js' %}"></script>
     <script type="text/javascript" src="{% static 'js/map.js' %}"></script>
 
-    <div style="width: 49%">
+    <div style="width: 49%; float:left;">
     <form method="post">
     <p> Profile Details: </p>
         {% csrf_token %}
@@ -24,7 +24,7 @@
 
     </div>
 
-    <div id='map-canvas' style="height:500px; width:48%;float:right; position:relative; margin-bottom: 400px">
+    <div id='map-canvas'>
 
     </div>
 

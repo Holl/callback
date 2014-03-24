@@ -5,14 +5,24 @@ from tastypie.authorization import Authorization
 from tastypie.bundle import Bundle
 from tastypie.fields import ToManyField, CharField, ToOneField
 from tastypie.resources import ModelResource, Resource
-from accounts_manager.models import ActorProfile, Tag, ProductionProfile
+from accounts_manager.models import ActorProfile, Tag, ProductionProfile, MainUser
 from auditioneer.models import Audition, Part
 
+
+class MainUserResource(ModelResource):
+
+    actor = ToOneField('accounts_manager.api.resources.ActorResource', 'actor')
+
+    class Meta:
+        queryset = MainUser.objects.all()
+        resource_name = "user"
+        authorization = Authorization()
 
 class ActorResource(ModelResource):
 
     Tags = ToManyField('accounts_manager.api.resources.TagsResource', 'tags', null=True)
     Auditions = ToManyField('accounts_manager.api.resources.AuditionResource', 'auditions', null=True)
+    user = ToOneField('accounts_manager.api.resources.MainUserResource', 'user')
 
     class Meta:
         queryset = ActorProfile.objects.all()
@@ -44,7 +54,7 @@ class ProductionResource(ModelResource):
 
 class AuditionResource(ModelResource):
 
-    actors = ToManyField('accounts_manager.api.resources.ActorResource', 'actor_user', null=True)
+    actors = ToManyField('accounts_manager.api.resources.ActorResource', 'actor_user', null=True, full=True)
     production = ToOneField('accounts_manager.api.resources.ProductionResource', 'production_user', full=True, null=True)
     parts = ToManyField('accounts_manager.api.resources.PartResource', 'parts', null=True, full=True)
     is_the_producer = fields.BooleanField()

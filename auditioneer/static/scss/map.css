@@ -11,13 +11,13 @@
   border-bottom: #C21000 double;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  text-align: center; }
+  text-align: center;
+  padding-left: 0px; }
   .cell ul {
     text-align: center;
-    list-style: none; }
+    list-style: none;
+    padding-left: 0px; }
     .cell ul li {
-      position: relative;
-      float: left;
       display: block;
       left: 37%;
       padding: 10px 5px 10px 5px; }

@@ -1,14 +1,18 @@
 import json
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
-from accounts_manager.models import ProductionProfile
+from accounts_manager.models import ProductionProfile, ActorProfile
 from auditioneer.forms import AuditionForm, PartForm
 from auditioneer.models import Audition
 
 
 
 def angular(request):
-    return render(request, 'angular.html')
+    try:
+        dataums = {'info': request.user.actor.id}
+    except:
+        dataums = {'info': request.user.producer.id}
+    return render(request, 'angular.html', dataums)
 
 
 

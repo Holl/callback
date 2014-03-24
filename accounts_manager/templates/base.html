@@ -19,7 +19,9 @@
     <ul>
     <li><a class="logo" href="{% url 'index' %}">{% trans "CALLBACK" %}</a></li>
 	<li><a href="{% url 'news' %}">{% trans "News" %}</a></li>
+    {% if user.is_authenticated %}
     <li><a href="{% url 'audition' %}">{% trans "Auditions" %}</a></li>
+    {% endif %}
     {% if user.producer %}
     <li><a href="{% url 'audition_builder' %}">{% trans "Create" %}</a></li>
     {% endif %}
@@ -43,7 +45,7 @@
         {% else %}
             <li><a class="profileButton" href="/audition/#/{{user.producer.id}}">{{ user.username }}</a>
                 <ul>
-                    <li><a href="{% url 'production_profile_builder' %}">{% trans "Edit Profile" %}</a></li>
+                    <li><a href="{% url 'production_profile_builder' %}">{% trans "Profile" %}</a></li>
                     <li> <a href="{% url 'profile_builder' %}">{% trans "Edit Profile" %}</a></li>
                     <li> <a href="{% url 'logout' %}">{% trans "Log out" %}</a></li>
 	                <li><a href="{% url 'auth_password_change' %}">{% trans "Change password" %}</a></li>
