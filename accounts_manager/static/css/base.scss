@@ -90,7 +90,7 @@ html, body {
 
 }
 
-.apply-buttons {
+.apply-buttons, #actor-side a, #producer-side a {
 	background-color:#f24537;
 	-webkit-border-top-left-radius:0px;
 	-moz-border-radius-topleft:0px;
@@ -116,7 +116,7 @@ html, body {
 	width:116px;
 	text-decoration:none;
 	text-align:center;
-}.apply-buttons:hover {
+}.apply-buttons:hover,#actor-side a:hover, #producer-side a:hover  {
 	background-color:#c62d1f;
 }.apply-buttons:active {
 	position:relative;
@@ -129,4 +129,38 @@ html, body {
   float:right;
   position:fixed;
   margin-bottom: 400px
+}
+
+#actor-side {
+  float: left;
+  text-align: center;
+  width: 50%;
+  margin-top: 5%;
+  a{
+    margin-top: 10%;
+    width: 60%;
+  }
+}
+
+#producer-side {
+  float: left;
+  text-align: center;
+  width: 50%;
+  margin-top: 5%;
+  a{
+    width: 60%;
+    margin-top: 10%;
+  }
+}
+
+#choice-head {
+    margin-top: 10%;
+  text-align: center;
+}
+
+#about-div {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
 }

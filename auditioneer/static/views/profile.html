@@ -1,12 +1,18 @@
-<h1 class="actor-name"> {{ actor.first_name }} {{ actor.last_name }}</h1>
-<img class="actor-headshot" src='{{ MEDIA_URL }}{{ actor.headshot }}'>
-
-<video width="320" height="240" src="{{ HighlightVideo }}" controls>
-</video>
-
-<p> {{ actor.bio }}</p>
-<p>{{ actor.phone }}</p>
-<p>{{ actor.gender }}</p>
-<p>{{ actor.tag }}</p>
+<div id="actor-div">
 
 
+    <img class="actor-headshot" src='{{ MEDIA_URL }}{{ actor.headshot }}'>
+
+
+
+
+
+</div>
+<div class="actor-extra">
+    <h1 class="actor-name"> {{ actor.first_name }} {{ actor.last_name }}</h1>
+    <p class="actor-phone">Phone: {{ actor.phone }}</p>
+    <p class="actor-bio"> {{ actor.bio }}</p>
+    <p class="actor-tag">{{ actor.tag }}</p>
+    <video class="actor-video" width="600" height="400" src="{{ HighlightVideo }}" preload="none" controls>
+         </video>
+</div>

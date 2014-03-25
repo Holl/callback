@@ -50,7 +50,11 @@ def login_page(request):
 
 def profile_builder(request):
     if request.method == "POST":
-        form = ProfileForm(request.POST, request.FILES)
+        try:
+            profiler = ActorProfile.objects.get(user=request.user)
+            form = ProfileForm(request.POST, instance=profiler)
+        except:
+            form = ProfileForm(request.POST)
         try:
             if form.is_valid():
                 submission = form.save(commit=False)
@@ -81,8 +85,11 @@ def profile_builder(request):
 
 def production_profile_builder(request):
     if request.method == "POST":
-        profiler = ProductionProfileForm.objects.get(user=request.user)
-        form = ProductionProfileForm(request.POST, instance=profiler)
+        try:
+            profiler = ProductionProfile.objects.get(user=request.user)
+            form = ProductionProfileForm(request.POST, instance=profiler)
+        except:
+            form = ProductionProfileForm(request.POST)
         try:
             if form.is_valid():
                 submission = form.save(commit=False)

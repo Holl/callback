@@ -34,8 +34,7 @@ class ActorProfile(models.Model):
 
     GENDER = (
         ('F', 'Female'),
-        ('M', 'Male'),
-        ('B', 'Both'),
+        ('M', 'Male')
     )
 
     first_name = models.CharField(max_length=50)

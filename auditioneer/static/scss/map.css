@@ -57,12 +57,31 @@
   text-align: center;
   font-family: Asap; }
 
-.actor-headshot, .actor-highlight_reel {
+.actor-headshot {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: 40%;
-  width: 40%; }
+  height: 100%;
+  width: 100%; }
+
+.actor-video {
+  background-color: grey;
+  border-radius: 10px; }
+
+.actor-phone {
+  text-align: center; }
+
+#actor-div {
+  text-align: center;
+  width: 50%;
+  float: left;
+  position: fixed;
+  top: 36px;
+  left: 0; }
+
+.actor-extra {
+  float: right;
+  width: 49%; }
 
 div {
   font-family: Asap; }

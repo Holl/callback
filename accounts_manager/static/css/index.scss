@@ -7,13 +7,9 @@ body {
 
 .landing_div {
   color: whitesmoke;
-  bottom: 0;
-  height: 200px;
-  left: 400px;
   margin: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: relative;
+  margin-top: 240px;
   font-size: 40px;
   padding-right: 20px;
   padding-left: 20px;
@@ -24,6 +20,7 @@ body {
     -1px 1px 0 #000,
     1px 1px 0 #000;
   font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
 
 }
 .landing-buttons, .audition-buttons {
