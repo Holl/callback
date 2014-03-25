@@ -85,3 +85,14 @@
 
 div {
   font-family: Asap; }
+
+#audition-div {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto; }
+  #audition-div h1 {
+    text-align: center; }
+  #audition-div #essentials {
+    text-align: center; }
+  #audition-div .apply-buttons {
+    margin-left: 42.5%; }

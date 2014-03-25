@@ -103,7 +103,6 @@
 }
 
 
-
 .actor-extra {
   float: right;
   width: 49%;
@@ -114,3 +113,21 @@
 div {
   font-family: Asap;
 }
+
+#audition-div {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  h1{
+    text-align: center;
+  }
+  #essentials {
+    text-align: center;
+  }
+
+  .apply-buttons{
+    margin-left:42.5%;
+  }
+
+}
+

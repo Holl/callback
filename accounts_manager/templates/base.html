@@ -17,7 +17,7 @@
 
     <div class="header-list">
     <ul>
-    <li><a class="logo" href="{% url 'index' %}">{% trans "CALLBACK" %}</a></li>
+    <li><a id="logo" href="{% url 'index' %}">{% trans "CALLBACK" %}</a></li>
 	<li><a href="{% url 'news' %}">{% trans "News" %}</a></li>
     {% if user.is_authenticated %}
     <li><a href="{% url 'audition' %}">{% trans "Auditions" %}</a></li>
