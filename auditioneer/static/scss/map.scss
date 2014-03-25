@@ -78,6 +78,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   height: 100%;
   width: 100%;
 
@@ -128,6 +130,15 @@ div {
   .apply-buttons{
     margin-left:42.5%;
   }
+
+  ul{
+    list-style: none;
+
+  }
+  .part-name {
+//    font-style: italic;
+  }
+
 
 }
 

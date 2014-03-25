@@ -81,7 +81,7 @@ class Migration(SchemaMigration):
             ('bio', self.gf('django.db.models.fields.CharField')(max_length=500)),
             ('created', self.gf('django.db.models.fields.DateTimeField')(auto_now_add=True, blank=True)),
             ('company_pic', self.gf('django.db.models.fields.files.ImageField')(max_length=100, blank=True)),
-            ('user', self.gf('django.db.models.fields.related.OneToOneField')(to=orm['accounts_manager.MainUser'], unique=True)),
+            ('user', self.gf('django.db.models.fields.related.OneToOneField')(related_name='producer', unique=True, to=orm['accounts_manager.MainUser'])),
         ))
         db.send_create_signal(u'accounts_manager', ['ProductionProfile'])
 
@@ -148,7 +148,7 @@ class Migration(SchemaMigration):
             'created': ('django.db.models.fields.DateTimeField', [], {'auto_now_add': 'True', 'blank': 'True'}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
-            'user': ('django.db.models.fields.related.OneToOneField', [], {'to': u"orm['accounts_manager.MainUser']", 'unique': 'True'})
+            'user': ('django.db.models.fields.related.OneToOneField', [], {'related_name': "'producer'", 'unique': 'True', 'to': u"orm['accounts_manager.MainUser']"})
         },
         u'accounts_manager.tag': {
             'Meta': {'object_name': 'Tag'},

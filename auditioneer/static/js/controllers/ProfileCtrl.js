@@ -8,7 +8,7 @@ function ProfileCtrl($scope, $http, $routeParams) {
         success(function(actor){
             $scope.actor = actor;
             console.log(actor);
-            $scope.HighlightVideo = "http://127.0.0.1:8001" + actor.highlight_reel;
+            $scope.HighlightVideo = "http://127.0.0.1:8000" + actor.highlight_reel;
 
         });
 
